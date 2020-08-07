@@ -4,4 +4,4 @@
 [Build]
   Publish = ""
   Functions = ""
-  command = "dbt docs generate"
+  command = "dbt docs generate"  
