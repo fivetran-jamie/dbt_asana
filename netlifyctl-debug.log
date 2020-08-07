@@ -1,33 +1,31 @@
-[37mDEBU[0m[07 Aug 20 12:07 -0700] PreRun                                        [37marguments[0m=[] [37mcommand[0m=init
-[37mDEBU[0m[07 Aug 20 12:07 -0700] configure debug middleware                   
-[37mDEBU[0m[07 Aug 20 12:07 -0700] configure logging middleware                 
-[37mDEBU[0m[07 Aug 20 12:07 -0700] setup logger middleware: panic               
-[37mDEBU[0m[07 Aug 20 12:07 -0700] configure auth middleware                    
-[37mDEBU[0m[07 Aug 20 12:07 -0700] setup credentials                             [37mcredentials[0m=0x146b000
-[37mDEBU[0m[07 Aug 20 12:07 -0700] configure client middleware                  
-[37mDEBU[0m[07 Aug 20 12:07 -0700] setup API endpoint                            [37mendpoint[0m="https://api.netlify.com"
-[37mDEBU[0m[07 Aug 20 12:07 -0700] POST /api/v1/sites?configure_dns=false HTTP/1.1
+[37mDEBU[0m[07 Aug 20 12:16 -0700] PreRun                                        [37marguments[0m=[] [37mcommand[0m=init
+[37mDEBU[0m[07 Aug 20 12:16 -0700] configure debug middleware                   
+[37mDEBU[0m[07 Aug 20 12:16 -0700] configure logging middleware                 
+[37mDEBU[0m[07 Aug 20 12:16 -0700] setup logger middleware: panic               
+[37mDEBU[0m[07 Aug 20 12:16 -0700] configure auth middleware                    
+[37mDEBU[0m[07 Aug 20 12:16 -0700] setup credentials                             [37mcredentials[0m=0x146b000
+[37mDEBU[0m[07 Aug 20 12:16 -0700] configure client middleware                  
+[37mDEBU[0m[07 Aug 20 12:16 -0700] setup API endpoint                            [37mendpoint[0m="https://api.netlify.com"
+[37mDEBU[0m[07 Aug 20 12:16 -0700] GET /api/v1/sites?filter=all&name=festive-galileo-5d3a74 HTTP/1.1
 Host: api.netlify.com
 User-Agent: netlifyctl
-Content-Length: 24
 Accept: application/json
 Authorization: Bearer ca6ebc21ba0c1aebf4035ac3a3807f4c7fe65aab9de357a734e0b7bdad199583
-Content-Type: application/json
 Accept-Encoding: gzip
 
-{"domain_aliases":null}
 
  
-[37mDEBU[0m[07 Aug 20 12:07 -0700] HTTP/1.1 201 Created
+[37mDEBU[0m[07 Aug 20 12:16 -0700] HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Alt-Svc: clear
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-Date: Fri, 07 Aug 2020 19:07:09 GMT
-Etag: W/"b9bc678e59095a47519a48a8a01db705"
-Location: https://api.netlify.com/api/v1/sites/a50d5a2a-3052-45c8-9780-463313eb7f9f
-Retry-After: 2020-08-07 19:08:09 UTC
+Date: Fri, 07 Aug 2020 19:16:27 GMT
+Etag: W/"607a41ae962988b623e4c4943c5ceaa8"
+Link: <https://api.netlify.com/api/v1/sites?filter=all&name=festive-galileo-5d3a74&page=1>; rel="last"
+Retry-After: 2020-08-07 19:17:27 UTC
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Total: 1
 Vary: Origin
 Via: 1.1 google
 X-Content-Type-Options: nosniff
@@ -35,14 +33,14 @@ X-Frame-Options: ALLOWALL
 X-Nf-Srv-Version: 8083513
 X-Ratelimit-Limit: 100000000
 X-Ratelimit-Remaining: 99999999
-X-Ratelimit-Reset: 2020-08-07 19:08:09 UTC
-X-Request-Id: 600c106f-1e12-4d3d-aef0-272766aff041
-X-Runtime: 0.088122
+X-Ratelimit-Reset: 2020-08-07 19:17:27 UTC
+X-Request-Id: cac86204-0549-4d91-a7bc-b3f9d5dab7a4
+X-Runtime: 0.067069
 
-89a
-{"id":"a50d5a2a-3052-45c8-9780-463313eb7f9f","site_id":"a50d5a2a-3052-45c8-9780-463313eb7f9f","plan":"nf_team_dev","ssl_plan":null,"premium":false,"claimed":true,"name":"musing-ride-7da812","custom_domain":null,"domain_aliases":[],"password":null,"notification_email":null,"url":"http://musing-ride-7da812.netlify.app","admin_url":"https://app.netlify.com/sites/musing-ride-7da812","deploy_id":"","build_id":"","deploy_url":"http://5f2da65d3b274286aaf43bde--musing-ride-7da812.netlify.app","state":"current","screenshot_url":null,"created_at":"2020-08-07T19:07:09.681Z","updated_at":"2020-08-07T19:07:09.681Z","user_id":"5f1b49f6e1fec4ca0f031e7f","error_message":null,"ssl":false,"ssl_url":"https://musing-ride-7da812.netlify.app","force_ssl":null,"ssl_status":null,"max_domain_aliases":100,"build_settings":{},"processing_settings":{"css":{"bundle":true,"minify":true},"js":{"bundle":true,"minify":true},"images":{"optimize":true},"html":{"pretty_urls":true},"skip":true},"prerender":null,"prerender_headers":null,"deploy_hook":null,"published_deploy":null,"managed_dns":true,"jwt_secret":null,"jwt_roles_path":"app_metadata.authorization.roles","account_slug":"jamie-rodriguez","account_name":"jamie-rodriguez's team","account_type":"Starter","capabilities":{"title":"Netlify Team Free","asset_acceleration":true,"form_processing":true,"cdn_propagation":"partial","build_gc_exchange":"buildbot-gc","build_node_pool":"buildbot-external-ssd","domain_aliases":true,"secure_site":false,"prerendering":true,"proxying":true,"ssl":"custom","rate_cents":0,"yearly_rate_cents":0,"ipv6_domain":"cdn.makerloop.com","branch_deploy":true,"managed_dns":true,"geo_ip":true,"split_testing":true,"id":"nf_team_dev","cdn_tier":"reg"},"paid_individual_site_subscription":false,"dns_zone_id":null,"identity_instance_id":null,"use_functions":null,"parent_user_id":null,"automatic_tls_provisioning":null,"disabled":null,"lifecycle_state":"active","id_domain":"a50d5a2a-3052-45c8-9780-463313eb7f9f.netlify.app","use_lm":null,"build_image":"xenial","automatic_tls_provisioning_expired":false,"analytics_instance_id":null,"functions_region":null,"functions_config":{"site_created_at":"2020-08-07T19:07:09.681Z"},"plugins":[]}
+15f5
+[{"id":"dd709d32-c33b-410b-9def-343bf1acde66","site_id":"dd709d32-c33b-410b-9def-343bf1acde66","plan":"nf_team_dev","ssl_plan":null,"premium":false,"claimed":true,"name":"festive-galileo-5d3a74","custom_domain":null,"domain_aliases":[],"password":null,"notification_email":null,"url":"http://festive-galileo-5d3a74.netlify.app","admin_url":"https://app.netlify.com/sites/festive-galileo-5d3a74","deploy_id":"5f2da758f9c011da30fde853","build_id":"","deploy_url":"http://5f2da758f9c011da30fde853--festive-galileo-5d3a74.netlify.app","state":"current","screenshot_url":"https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5f2da758f9c011da30fde853/screenshot.png","created_at":"2020-08-07T18:58:04.196Z","updated_at":"2020-08-07T19:15:28.372Z","user_id":"5f1b49f6e1fec4ca0f031e7f","error_message":null,"ssl":false,"ssl_url":"https://festive-galileo-5d3a74.netlify.app","force_ssl":null,"ssl_status":null,"max_domain_aliases":100,"build_settings":{"cmd":"dbt docs generate","dir":"target","env":{},"created_at":"2020-08-07T18:58:04.240Z","updated_at":"2020-08-07T19:01:58.923Z","private_logs":null,"allowed_branches":["master"],"functions_dir":null,"installation_id":11128589,"skip_prs":null,"untrusted_flow":"review","base_rel_dir":true,"stop_builds":false,"public_repo":true,"provider":"github","repo_type":"git","repo_url":"https://github.com/fivetran-jamie/dbt_asana","repo_branch":"master","repo_path":"fivetran-jamie/dbt_asana","base":"","deploy_key_id":null},"processing_settings":{"css":{"bundle":true,"minify":true},"js":{"bundle":true,"minify":true},"images":{"optimize":true},"html":{"pretty_urls":true},"skip":true},"prerender":null,"prerender_headers":null,"deploy_hook":"https://api.netlify.com/hooks/github","published_deploy":{"id":"5f2da758f9c011da30fde853","site_id":"dd709d32-c33b-410b-9def-343bf1acde66","build_id":null,"state":"ready","name":"festive-galileo-5d3a74","url":"http://festive-galileo-5d3a74.netlify.app","ssl_url":"https://festive-galileo-5d3a74.netlify.app","admin_url":"https://app.netlify.com/sites/festive-galileo-5d3a74","deploy_url":"http://5f2da758f9c011da30fde853--festive-galileo-5d3a74.netlify.app","deploy_ssl_url":"https://5f2da758f9c011da30fde853--festive-galileo-5d3a74.netlify.app","created_at":"2020-08-07T19:11:20.862Z","updated_at":"2020-08-07T19:11:32.686Z","user_id":"5f1b49f6e1fec4ca0f031e7f","error_message":null,"required":[],"required_functions":[],"commit_ref":null,"review_id":null,"branch":"master","commit_url":null,"skipped":null,"locked":null,"log_access_attributes":{"type":"firebase","url":"https://netlify-builds5.firebaseio.com/deploys/5f2da758f9c011da30fde853/log","endpoint":"https://netlify-builds5.firebaseio.com","path":"/deploys/5f2da758f9c011da30fde853/log","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2IjowLCJpYXQiOjE1OTY4Mjc3ODcsImQiOnsidWlkIjoiIn19.BLYCLHmiw6Jx_bGaepKOCJwae3t-VI6um3PwiWXjSGU"},"title":null,"review_url":null,"published_at":"2020-08-07T19:11:28.221Z","context":"production","deploy_time":7,"available_functions":[],"summary":{"status":"ready","messages":[{"type":"info","title":"7 new files uploaded","description":"7 assets changed.","details":null},{"type":"info","title":"No redirect rules processed","description":"This deploy did not include any redirect rules. [Learn more about redirects](https://www.netlify.com/docs/redirects/).","details":""},{"type":"info","title":"No header rules processed","description":"This deploy did not include any header rules. [Learn more about headers](https://www.netlify.com/docs/headers-and-basic-auth/).","details":""},{"type":"info","title":"All linked resources are secure","description":"Congratulations! No insecure mixed content found in your files.","details":null}]},"screenshot_url":"https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5f2da758f9c011da30fde853/screenshot.png","site_capabilities":{"title":"Netlify Team Free","asset_acceleration":true,"form_processing":true,"cdn_propagation":"partial","build_gc_exchange":"buildbot-gc","build_node_pool":"buildbot-external-ssd","domain_aliases":true,"secure_site":false,"prerendering":true,"proxying":true,"ssl":"custom","rate_cents":0,"yearly_rate_cents":0,"ipv6_domain":"cdn.makerloop.com","branch_deploy":true,"managed_dns":true,"geo_ip":true,"split_testing":true,"id":"nf_team_dev","cdn_tier":"reg"},"committer":null,"skipped_log":null,"manual_deploy":true,"file_tracking_optimization":false,"plugin_state":"none"},"managed_dns":true,"jwt_secret":null,"jwt_roles_path":"app_metadata.authorization.roles","account_slug":"jamie-rodriguez","account_name":"jamie-rodriguez's team","account_type":"Starter","capabilities":{"title":"Netlify Team Free","asset_acceleration":true,"form_processing":true,"cdn_propagation":"partial","build_gc_exchange":"buildbot-gc","build_node_pool":"buildbot-external-ssd","domain_aliases":true,"secure_site":false,"prerendering":true,"proxying":true,"ssl":"custom","rate_cents":0,"yearly_rate_cents":0,"ipv6_domain":"cdn.makerloop.com","branch_deploy":true,"managed_dns":true,"geo_ip":true,"split_testing":true,"id":"nf_team_dev","cdn_tier":"reg"},"paid_individual_site_subscription":false,"dns_zone_id":null,"identity_instance_id":null,"use_functions":null,"parent_user_id":null,"automatic_tls_provisioning":null,"disabled":null,"lifecycle_state":"active","id_domain":"dd709d32-c33b-410b-9def-343bf1acde66.netlify.app","use_lm":null,"build_image":"xenial","automatic_tls_provisioning_expired":false,"analytics_instance_id":null,"functions_region":null,"functions_config":{"site_created_at":"2020-08-07T18:58:04.196Z"},"plugins":[]}]
 0
 
 
  
-[31mERRO[0m[07 Aug 20 12:07 -0700] command failed                                [31merror[0m="GET https://api.github.com/repos/fivetran-jamie/dbt_asana.git: 404 Not Found []"
+[31mERRO[0m[07 Aug 20 12:16 -0700] command failed                                [31merror[0m="GET https://api.github.com/repos/fivetran-jamie/dbt_asana.git: 404 Not Found []"
