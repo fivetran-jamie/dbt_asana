@@ -1,7 +1,0 @@
-[Settings]
-  ID = "dd709d32-c33b-410b-9def-343bf1acde66"
-
-[Build]
-  Publish = ""
-  Functions = ""
-  command = "dbt docs generate"  
