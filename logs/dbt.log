@@ -1,0 +1,1854 @@
+2020-08-07 18:55:30.769213 (MainThread): Running with dbt=0.17.2
+2020-08-07 18:55:31.103519 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jamie.rodriguez/.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2020-08-07 18:55:31.104460 (MainThread): Tracking: tracking
+2020-08-07 18:55:31.117372 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d30a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d42a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d426d0>]}
+2020-08-07 18:55:31.139645 (MainThread): Partial parsing not enabled
+2020-08-07 18:55:31.142745 (MainThread): Parsing macros/core.sql
+2020-08-07 18:55:31.149268 (MainThread): Parsing macros/materializations/helpers.sql
+2020-08-07 18:55:31.157572 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-08-07 18:55:31.160155 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-08-07 18:55:31.177408 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-08-07 18:55:31.205098 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-08-07 18:55:31.225773 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-08-07 18:55:31.228408 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-08-07 18:55:31.235051 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-08-07 18:55:31.248983 (MainThread): Parsing macros/materializations/table/table.sql
+2020-08-07 18:55:31.255751 (MainThread): Parsing macros/materializations/view/view.sql
+2020-08-07 18:55:31.261761 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-08-07 18:55:31.266461 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-08-07 18:55:31.267797 (MainThread): Parsing macros/etc/query.sql
+2020-08-07 18:55:31.269221 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-08-07 18:55:31.270984 (MainThread): Parsing macros/etc/datetime.sql
+2020-08-07 18:55:31.279417 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-08-07 18:55:31.281652 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-08-07 18:55:31.283800 (MainThread): Parsing macros/adapters/common.sql
+2020-08-07 18:55:31.329775 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-08-07 18:55:31.331218 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-08-07 18:55:31.332544 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-08-07 18:55:31.334413 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-08-07 18:55:31.338130 (MainThread): Parsing macros/etc.sql
+2020-08-07 18:55:31.339106 (MainThread): Parsing macros/catalog.sql
+2020-08-07 18:55:31.344866 (MainThread): Parsing macros/adapters.sql
+2020-08-07 18:55:31.361124 (MainThread): Parsing macros/materializations/seed.sql
+2020-08-07 18:55:31.363904 (MainThread): Parsing macros/materializations/view.sql
+2020-08-07 18:55:31.366057 (MainThread): Parsing macros/materializations/table.sql
+2020-08-07 18:55:31.376908 (MainThread): Parsing macros/materializations/incremental.sql
+2020-08-07 18:55:31.390566 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-08-07 18:55:31.411708 (MainThread): Partial parsing not enabled
+2020-08-07 18:55:31.412057 (MainThread): Parsing macros/string_agg.sql
+2020-08-07 18:55:31.479084 (MainThread): Acquiring new bigquery connection "model.asana.asana_user".
+2020-08-07 18:55:31.479226 (MainThread): Opening a new connection, currently in state init
+2020-08-07 18:55:31.509121 (MainThread): Acquiring new bigquery connection "model.asana.asana_task".
+2020-08-07 18:55:31.509255 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.525504 (MainThread): Acquiring new bigquery connection "model.asana.asana_team".
+2020-08-07 18:55:31.525614 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.536159 (MainThread): Acquiring new bigquery connection "model.asana.asana_project".
+2020-08-07 18:55:31.536252 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.552945 (MainThread): Acquiring new bigquery connection "model.asana.asana_daily_metrics".
+2020-08-07 18:55:31.553053 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.567240 (MainThread): Acquiring new bigquery connection "model.asana.asana_tag".
+2020-08-07 18:55:31.567341 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.579213 (MainThread): Acquiring new bigquery connection "model.asana.asana_subtask_parent".
+2020-08-07 18:55:31.579308 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.589357 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_assignee".
+2020-08-07 18:55:31.589464 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.601093 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_first_modifier".
+2020-08-07 18:55:31.601205 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.611219 (MainThread): Acquiring new bigquery connection "model.asana.asana_project_task_metrics".
+2020-08-07 18:55:31.611319 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.623834 (MainThread): Acquiring new bigquery connection "model.asana.asana_user_task_metrics".
+2020-08-07 18:55:31.623932 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.633847 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_comments".
+2020-08-07 18:55:31.633945 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.644357 (MainThread): Acquiring new bigquery connection "model.asana.asana_project_user".
+2020-08-07 18:55:31.644457 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.658662 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_tags".
+2020-08-07 18:55:31.658784 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.671985 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_followers".
+2020-08-07 18:55:31.672106 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.685044 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_open_length".
+2020-08-07 18:55:31.685236 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.698579 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_story".
+2020-08-07 18:55:31.698688 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:31.715569 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_projects".
+2020-08-07 18:55:31.715677 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:32.312178 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ec83a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fe4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f61820>]}
+2020-08-07 18:55:32.312416 (MainThread): Flushing usage events
+2020-08-07 18:55:32.992531 (MainThread): Connection 'model.asana.asana_task_projects' was properly closed.
+2020-08-07 18:55:32.992740 (MainThread): Encountered an error:
+2020-08-07 18:55:32.992884 (MainThread): Compilation Error in model asana_user (models/asana_user.sql)
+  Model 'model.asana.asana_user' (models/asana_user.sql) depends on a node named 'stg_asana_user' which was not found
+2020-08-07 18:55:32.999214 (MainThread): Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/generate.py", line 215, in run
+    compile_results = CompileTask.run(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 390, in run
+    self._runtime_initialize()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 103, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 71, in _runtime_initialize
+    self.load_manifest()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 60, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/perf_utils.py", line 23, in get_full_manifest
+    return load_manifest(config, internal, set_header)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/parser/manifest.py", line 641, in load_manifest
+    return ManifestLoader.load_all(config, internal_manifest, macro_hook)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/parser/manifest.py", line 358, in load_all
+    manifest = loader.create_manifest()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/parser/manifest.py", line 334, in create_manifest
+    self.process_manifest(manifest)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/parser/manifest.py", line 306, in process_manifest
+    process_refs(manifest, project_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/parser/manifest.py", line 564, in process_refs
+    _process_refs_for_node(manifest, current_project, node)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/parser/manifest.py", line 546, in _process_refs_for_node
+    dbt.utils.invalid_ref_fail_unless_test(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/utils.py", line 314, in invalid_ref_fail_unless_test
+    dbt.exceptions.ref_target_not_found(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/exceptions.py", line 527, in ref_target_not_found
+    raise_compiler_error(msg, model)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/exceptions.py", line 396, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model asana_user (models/asana_user.sql)
+  Model 'model.asana.asana_user' (models/asana_user.sql) depends on a node named 'stg_asana_user' which was not found
+
+2020-08-07 18:55:47.464377 (MainThread): Running with dbt=0.17.2
+2020-08-07 18:55:47.756606 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jamie.rodriguez/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-08-07 18:55:47.757469 (MainThread): Tracking: tracking
+2020-08-07 18:55:47.765777 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c12aca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1580a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1588e0>]}
+2020-08-07 18:55:47.769508 (MainThread): Set downloads directory='/var/folders/y4/_83dhlg159l7sltx1_8yhnxc0000gp/T/dbt-downloads-u6jzvh5g'
+2020-08-07 18:55:47.771150 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2020-08-07 18:55:48.195076 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2020-08-07 18:55:48.195465 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2020-08-07 18:55:48.363361 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2020-08-07 18:55:48.379051 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.4.0.json
+2020-08-07 18:55:48.521750 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.4.0.json 200
+2020-08-07 18:55:48.528103 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/asana_source.json
+2020-08-07 18:55:49.022223 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/asana_source.json 200
+2020-08-07 18:55:49.023383 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/asana_source/0.1.0.json
+2020-08-07 18:55:49.620711 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/asana_source/0.1.0.json 200
+2020-08-07 18:55:49.630073 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2020-08-07 18:55:49.759452 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2020-08-07 18:55:49.774889 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.4.0.json
+2020-08-07 18:55:49.924113 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.4.0.json 200
+2020-08-07 18:55:49.925222 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2020-08-07 18:55:50.117092 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2020-08-07 18:55:50.131296 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/asana_source.json
+2020-08-07 18:55:50.262092 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/asana_source.json 200
+2020-08-07 18:55:50.262973 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.4.0.json
+2020-08-07 18:55:50.408931 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.4.0.json 200
+2020-08-07 18:55:50.409888 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fivetran/asana_source/0.1.0.json
+2020-08-07 18:55:50.638536 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fivetran/asana_source/0.1.0.json 200
+2020-08-07 18:55:50.648003 (MainThread): Installing fishtown-analytics/dbt_utils@0.4.0
+2020-08-07 18:55:51.167742 (MainThread):   Installed from version 0.4.0
+
+2020-08-07 18:55:51.167956 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '10686db6-73ad-4571-a5bd-fa972e6979f4', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d228160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d228e20>]}
+2020-08-07 18:55:51.168143 (MainThread): Installing fivetran/asana_source@0.1.0
+2020-08-07 18:55:51.675794 (MainThread):   Installed from version 0.1.0
+
+2020-08-07 18:55:51.676010 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '10686db6-73ad-4571-a5bd-fa972e6979f4', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109691af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d228310>]}
+2020-08-07 18:55:51.676708 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c152580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c137490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d228580>]}
+2020-08-07 18:55:51.676916 (MainThread): Flushing usage events
+2020-08-07 18:55:56.813977 (MainThread): Running with dbt=0.17.2
+2020-08-07 18:55:57.162898 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jamie.rodriguez/.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2020-08-07 18:55:57.164413 (MainThread): Tracking: tracking
+2020-08-07 18:55:57.172877 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107063160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10706e940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10706e5e0>]}
+2020-08-07 18:55:57.195203 (MainThread): Partial parsing not enabled
+2020-08-07 18:55:57.197100 (MainThread): Parsing macros/core.sql
+2020-08-07 18:55:57.202576 (MainThread): Parsing macros/materializations/helpers.sql
+2020-08-07 18:55:57.210717 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-08-07 18:55:57.213201 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-08-07 18:55:57.230057 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-08-07 18:55:57.261957 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-08-07 18:55:57.284017 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-08-07 18:55:57.286479 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-08-07 18:55:57.293054 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-08-07 18:55:57.308236 (MainThread): Parsing macros/materializations/table/table.sql
+2020-08-07 18:55:57.315547 (MainThread): Parsing macros/materializations/view/view.sql
+2020-08-07 18:55:57.322063 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-08-07 18:55:57.327180 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-08-07 18:55:57.328634 (MainThread): Parsing macros/etc/query.sql
+2020-08-07 18:55:57.330310 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-08-07 18:55:57.332438 (MainThread): Parsing macros/etc/datetime.sql
+2020-08-07 18:55:57.341578 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-08-07 18:55:57.344082 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-08-07 18:55:57.346485 (MainThread): Parsing macros/adapters/common.sql
+2020-08-07 18:55:57.396167 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-08-07 18:55:57.397785 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-08-07 18:55:57.399050 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-08-07 18:55:57.400951 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-08-07 18:55:57.404404 (MainThread): Parsing macros/etc.sql
+2020-08-07 18:55:57.405808 (MainThread): Parsing macros/catalog.sql
+2020-08-07 18:55:57.412293 (MainThread): Parsing macros/adapters.sql
+2020-08-07 18:55:57.428295 (MainThread): Parsing macros/materializations/seed.sql
+2020-08-07 18:55:57.431998 (MainThread): Parsing macros/materializations/view.sql
+2020-08-07 18:55:57.434523 (MainThread): Parsing macros/materializations/table.sql
+2020-08-07 18:55:57.445483 (MainThread): Parsing macros/materializations/incremental.sql
+2020-08-07 18:55:57.458903 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-08-07 18:55:57.517479 (MainThread): Partial parsing not enabled
+2020-08-07 18:55:57.517834 (MainThread): Parsing macros/string_agg.sql
+2020-08-07 18:55:57.521761 (MainThread): Parsing macros/cross_db_utils/except.sql
+2020-08-07 18:55:57.523402 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2020-08-07 18:55:57.525644 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2020-08-07 18:55:57.529201 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2020-08-07 18:55:57.535328 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2020-08-07 18:55:57.537218 (MainThread): Parsing macros/cross_db_utils/length.sql
+2020-08-07 18:55:57.566991 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2020-08-07 18:55:57.571433 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2020-08-07 18:55:57.573351 (MainThread): Parsing macros/cross_db_utils/right.sql
+2020-08-07 18:55:57.576929 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2020-08-07 18:55:57.588546 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2020-08-07 18:55:57.591316 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2020-08-07 18:55:57.593287 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2020-08-07 18:55:57.595178 (MainThread): Parsing macros/cross_db_utils/position.sql
+2020-08-07 18:55:57.596982 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2020-08-07 18:55:57.598136 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2020-08-07 18:55:57.601754 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2020-08-07 18:55:57.608637 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2020-08-07 18:55:57.612169 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2020-08-07 18:55:57.615085 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2020-08-07 18:55:57.617243 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2020-08-07 18:55:57.642626 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2020-08-07 18:55:57.643745 (MainThread): Parsing macros/logger/pretty_time.sql
+2020-08-07 18:55:57.644968 (MainThread): Parsing macros/logger/log_info.sql
+2020-08-07 18:55:57.646145 (MainThread): Parsing macros/datetime/date_spine.sql
+2020-08-07 18:55:57.650262 (MainThread): Parsing macros/web/get_url_host.sql
+2020-08-07 18:55:57.652163 (MainThread): Parsing macros/web/get_url_path.sql
+2020-08-07 18:55:57.654894 (MainThread): Parsing macros/web/get_url_parameter.sql
+2020-08-07 18:55:57.656363 (MainThread): Parsing macros/geo/haversine_distance.sql
+2020-08-07 18:55:57.657756 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2020-08-07 18:55:57.659528 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2020-08-07 18:55:57.661945 (MainThread): Parsing macros/schema_tests/recency.sql
+2020-08-07 18:55:57.663600 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2020-08-07 18:55:57.665213 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2020-08-07 18:55:57.666564 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2020-08-07 18:55:57.667986 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2020-08-07 18:55:57.669936 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2020-08-07 18:55:57.671468 (MainThread): Parsing macros/schema_tests/equality.sql
+2020-08-07 18:55:57.674823 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2020-08-07 18:55:57.681990 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2020-08-07 18:55:57.683863 (MainThread): Parsing macros/sql/generate_series.sql
+2020-08-07 18:55:57.688447 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2020-08-07 18:55:57.693710 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2020-08-07 18:55:57.697939 (MainThread): Parsing macros/sql/star.sql
+2020-08-07 18:55:57.701612 (MainThread): Parsing macros/sql/unpivot.sql
+2020-08-07 18:55:57.708412 (MainThread): Parsing macros/sql/union.sql
+2020-08-07 18:55:57.718569 (MainThread): Parsing macros/sql/groupby.sql
+2020-08-07 18:55:57.720075 (MainThread): Parsing macros/sql/surrogate_key.sql
+2020-08-07 18:55:57.723285 (MainThread): Parsing macros/sql/safe_add.sql
+2020-08-07 18:55:57.724883 (MainThread): Parsing macros/sql/nullcheck.sql
+2020-08-07 18:55:57.726913 (MainThread): Parsing macros/sql/get_column_values.sql
+2020-08-07 18:55:57.731920 (MainThread): Parsing macros/sql/pivot.sql
+2020-08-07 18:55:57.735204 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2020-08-07 18:55:57.780255 (MainThread): Acquiring new bigquery connection "model.asana.asana_user".
+2020-08-07 18:55:57.780381 (MainThread): Opening a new connection, currently in state init
+2020-08-07 18:55:57.812266 (MainThread): Acquiring new bigquery connection "model.asana.asana_task".
+2020-08-07 18:55:57.812384 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.829886 (MainThread): Acquiring new bigquery connection "model.asana.asana_team".
+2020-08-07 18:55:57.830004 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.842011 (MainThread): Acquiring new bigquery connection "model.asana.asana_project".
+2020-08-07 18:55:57.842126 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.863075 (MainThread): Acquiring new bigquery connection "model.asana.asana_daily_metrics".
+2020-08-07 18:55:57.863192 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.904109 (MainThread): Acquiring new bigquery connection "model.asana.asana_tag".
+2020-08-07 18:55:57.904224 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.918642 (MainThread): Acquiring new bigquery connection "model.asana.asana_subtask_parent".
+2020-08-07 18:55:57.918930 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.930777 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_assignee".
+2020-08-07 18:55:57.930900 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.944030 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_first_modifier".
+2020-08-07 18:55:57.944147 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.956136 (MainThread): Acquiring new bigquery connection "model.asana.asana_project_task_metrics".
+2020-08-07 18:55:57.956254 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.970108 (MainThread): Acquiring new bigquery connection "model.asana.asana_user_task_metrics".
+2020-08-07 18:55:57.970289 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.981744 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_comments".
+2020-08-07 18:55:57.981858 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:57.993809 (MainThread): Acquiring new bigquery connection "model.asana.asana_project_user".
+2020-08-07 18:55:57.993928 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.010024 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_tags".
+2020-08-07 18:55:58.010140 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.023725 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_followers".
+2020-08-07 18:55:58.023842 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.038960 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_open_length".
+2020-08-07 18:55:58.039075 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.055941 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_story".
+2020-08-07 18:55:58.056062 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.073883 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_projects".
+2020-08-07 18:55:58.074000 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.738038 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_team".
+2020-08-07 18:55:58.738158 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.749243 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_project_task".
+2020-08-07 18:55:58.749362 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.760309 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_project".
+2020-08-07 18:55:58.760409 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.771033 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task".
+2020-08-07 18:55:58.771132 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.781998 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_user".
+2020-08-07 18:55:58.782103 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.792444 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task_tag".
+2020-08-07 18:55:58.792542 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.802976 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task_follower".
+2020-08-07 18:55:58.803076 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.814917 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task_section".
+2020-08-07 18:55:58.815113 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.826677 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_tag".
+2020-08-07 18:55:58.826790 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.838263 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_section".
+2020-08-07 18:55:58.838378 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:55:58.850092 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_story".
+2020-08-07 18:55:58.850215 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:00.067579 (MainThread): Found 29 models, 81 tests, 0 snapshots, 0 analyses, 278 macros, 0 operations, 0 seed files, 11 sources
+2020-08-07 18:56:00.085479 (MainThread): 
+2020-08-07 18:56:00.086204 (MainThread): Acquiring new bigquery connection "master".
+2020-08-07 18:56:00.086358 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:00.203478 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_dbt-package-testing_dbt_jamie".
+2020-08-07 18:56:00.203619 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-08-07 18:56:00.207966 (ThreadPoolExecutor-0_0): Your application has authenticated using end user credentials from Google Cloud SDK. We recommend that most server applications use service accounts instead. If your application continues to use end user credentials from Cloud SDK, you might receive a "quota exceeded" or "API not enabled" error. For more information about service accounts, see https://cloud.google.com/docs/authentication/
+2020-08-07 18:56:02.832744 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-08-07 18:56:03.081967 (MainThread): Connection 'master' was properly closed.
+2020-08-07 18:56:03.082128 (MainThread): Connection 'list_dbt-package-testing_dbt_jamie' was properly closed.
+2020-08-07 18:56:03.082374 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107476790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107476c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10736efd0>]}
+2020-08-07 18:56:03.082664 (MainThread): Flushing usage events
+2020-08-07 18:56:03.508575 (MainThread): Encountered an error:
+2020-08-07 18:56:03.508846 (MainThread): ('invalid_grant: reauth related error (invalid_rapt)', '{\n  "error": "invalid_grant",\n  "error_description": "reauth related error (invalid_rapt)",\n  "error_subtype": "invalid_rapt"\n}')
+2020-08-07 18:56:03.524877 (MainThread): Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/generate.py", line 215, in run
+    compile_results = CompileTask.run(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 410, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 370, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 357, in before_run
+    self.populate_adapter_cache(adapter)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/task/runnable.py", line 350, in populate_adapter_cache
+    adapter.set_relations_cache(self.manifest)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 360, in set_relations_cache
+    self._relations_cache_for_schemas(manifest)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 337, in _relations_cache_for_schemas
+    for relation in future.result():
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/utils.py", line 526, in connected
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 241, in list_relations_without_caching
+    return [self._bq_table_to_relation(table) for table in all_tables]
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 241, in <listcomp>
+    return [self._bq_table_to_relation(table) for table in all_tables]
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 212, in _items_iter
+    for page in self._page_iter(increment=False):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 243, in _page_iter
+    page = self._next_page()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 369, in _next_page
+    response = self._get_next_page_response()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 418, in _get_next_page_response
+    return self.api_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 556, in _call_api
+    return call()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/api_core/retry.py", line 281, in retry_wrapped_func
+    return retry_target(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/cloud/_http.py", line 412, in api_request
+    response = self._make_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/cloud/_http.py", line 276, in _make_request
+    return self._do_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/cloud/_http.py", line 314, in _do_request
+    return self.http.request(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/auth/transport/requests.py", line 440, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/auth/credentials.py", line 124, in before_request
+    self.refresh(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/oauth2/credentials.py", line 177, in refresh
+    access_token, refresh_token, expiry, grant_response = _client.refresh_grant(
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/oauth2/_client.py", line 248, in refresh_grant
+    response_data = _token_endpoint_request(request, token_uri, body)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/oauth2/_client.py", line 124, in _token_endpoint_request
+    _handle_error_response(response_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/google/oauth2/_client.py", line 60, in _handle_error_response
+    raise exceptions.RefreshError(error_details, response_body)
+google.auth.exceptions.RefreshError: ('invalid_grant: reauth related error (invalid_rapt)', '{\n  "error": "invalid_grant",\n  "error_description": "reauth related error (invalid_rapt)",\n  "error_subtype": "invalid_rapt"\n}')
+
+2020-08-07 18:56:42.080087 (MainThread): Running with dbt=0.17.2
+2020-08-07 18:56:42.401088 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jamie.rodriguez/.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2020-08-07 18:56:42.403124 (MainThread): Tracking: tracking
+2020-08-07 18:56:42.420125 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec2a0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec3a9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec3a640>]}
+2020-08-07 18:56:42.443419 (MainThread): Partial parsing not enabled
+2020-08-07 18:56:42.446150 (MainThread): Parsing macros/core.sql
+2020-08-07 18:56:42.452063 (MainThread): Parsing macros/materializations/helpers.sql
+2020-08-07 18:56:42.460406 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-08-07 18:56:42.462844 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-08-07 18:56:42.483008 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-08-07 18:56:42.513686 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-08-07 18:56:42.535027 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-08-07 18:56:42.537025 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-08-07 18:56:42.544049 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-08-07 18:56:42.559210 (MainThread): Parsing macros/materializations/table/table.sql
+2020-08-07 18:56:42.567493 (MainThread): Parsing macros/materializations/view/view.sql
+2020-08-07 18:56:42.574578 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-08-07 18:56:42.580149 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-08-07 18:56:42.581418 (MainThread): Parsing macros/etc/query.sql
+2020-08-07 18:56:42.582769 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-08-07 18:56:42.584816 (MainThread): Parsing macros/etc/datetime.sql
+2020-08-07 18:56:42.594273 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-08-07 18:56:42.596482 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-08-07 18:56:42.598984 (MainThread): Parsing macros/adapters/common.sql
+2020-08-07 18:56:42.647260 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-08-07 18:56:42.648550 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-08-07 18:56:42.649693 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-08-07 18:56:42.651043 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-08-07 18:56:42.653499 (MainThread): Parsing macros/etc.sql
+2020-08-07 18:56:42.654392 (MainThread): Parsing macros/catalog.sql
+2020-08-07 18:56:42.660996 (MainThread): Parsing macros/adapters.sql
+2020-08-07 18:56:42.678196 (MainThread): Parsing macros/materializations/seed.sql
+2020-08-07 18:56:42.680971 (MainThread): Parsing macros/materializations/view.sql
+2020-08-07 18:56:42.683345 (MainThread): Parsing macros/materializations/table.sql
+2020-08-07 18:56:42.693514 (MainThread): Parsing macros/materializations/incremental.sql
+2020-08-07 18:56:42.706840 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-08-07 18:56:42.765850 (MainThread): Partial parsing not enabled
+2020-08-07 18:56:42.766544 (MainThread): Parsing macros/string_agg.sql
+2020-08-07 18:56:42.773566 (MainThread): Parsing macros/cross_db_utils/except.sql
+2020-08-07 18:56:42.775589 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2020-08-07 18:56:42.777635 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2020-08-07 18:56:42.780953 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2020-08-07 18:56:42.788275 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2020-08-07 18:56:42.790288 (MainThread): Parsing macros/cross_db_utils/length.sql
+2020-08-07 18:56:42.820589 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2020-08-07 18:56:42.824203 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2020-08-07 18:56:42.825875 (MainThread): Parsing macros/cross_db_utils/right.sql
+2020-08-07 18:56:42.829223 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2020-08-07 18:56:42.841564 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2020-08-07 18:56:42.844035 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2020-08-07 18:56:42.845728 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2020-08-07 18:56:42.847446 (MainThread): Parsing macros/cross_db_utils/position.sql
+2020-08-07 18:56:42.849293 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2020-08-07 18:56:42.850359 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2020-08-07 18:56:42.853498 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2020-08-07 18:56:42.858632 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2020-08-07 18:56:42.861377 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2020-08-07 18:56:42.863552 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2020-08-07 18:56:42.865661 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2020-08-07 18:56:42.889179 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2020-08-07 18:56:42.890169 (MainThread): Parsing macros/logger/pretty_time.sql
+2020-08-07 18:56:42.891178 (MainThread): Parsing macros/logger/log_info.sql
+2020-08-07 18:56:42.892218 (MainThread): Parsing macros/datetime/date_spine.sql
+2020-08-07 18:56:42.896427 (MainThread): Parsing macros/web/get_url_host.sql
+2020-08-07 18:56:42.898493 (MainThread): Parsing macros/web/get_url_path.sql
+2020-08-07 18:56:42.901117 (MainThread): Parsing macros/web/get_url_parameter.sql
+2020-08-07 18:56:42.902425 (MainThread): Parsing macros/geo/haversine_distance.sql
+2020-08-07 18:56:42.903531 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2020-08-07 18:56:42.905070 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2020-08-07 18:56:42.907369 (MainThread): Parsing macros/schema_tests/recency.sql
+2020-08-07 18:56:42.909084 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2020-08-07 18:56:42.910430 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2020-08-07 18:56:42.911552 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2020-08-07 18:56:42.912837 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2020-08-07 18:56:42.914394 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2020-08-07 18:56:42.915789 (MainThread): Parsing macros/schema_tests/equality.sql
+2020-08-07 18:56:42.918965 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2020-08-07 18:56:42.924673 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2020-08-07 18:56:42.925978 (MainThread): Parsing macros/sql/generate_series.sql
+2020-08-07 18:56:42.929458 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2020-08-07 18:56:42.933282 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2020-08-07 18:56:42.936262 (MainThread): Parsing macros/sql/star.sql
+2020-08-07 18:56:42.938970 (MainThread): Parsing macros/sql/unpivot.sql
+2020-08-07 18:56:42.945181 (MainThread): Parsing macros/sql/union.sql
+2020-08-07 18:56:42.955333 (MainThread): Parsing macros/sql/groupby.sql
+2020-08-07 18:56:42.956467 (MainThread): Parsing macros/sql/surrogate_key.sql
+2020-08-07 18:56:42.959181 (MainThread): Parsing macros/sql/safe_add.sql
+2020-08-07 18:56:42.960339 (MainThread): Parsing macros/sql/nullcheck.sql
+2020-08-07 18:56:42.961776 (MainThread): Parsing macros/sql/get_column_values.sql
+2020-08-07 18:56:42.966171 (MainThread): Parsing macros/sql/pivot.sql
+2020-08-07 18:56:42.968837 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2020-08-07 18:56:43.011232 (MainThread): Acquiring new bigquery connection "model.asana.asana_user".
+2020-08-07 18:56:43.011405 (MainThread): Opening a new connection, currently in state init
+2020-08-07 18:56:43.045105 (MainThread): Acquiring new bigquery connection "model.asana.asana_task".
+2020-08-07 18:56:43.045235 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.064041 (MainThread): Acquiring new bigquery connection "model.asana.asana_team".
+2020-08-07 18:56:43.064246 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.078701 (MainThread): Acquiring new bigquery connection "model.asana.asana_project".
+2020-08-07 18:56:43.078860 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.098107 (MainThread): Acquiring new bigquery connection "model.asana.asana_daily_metrics".
+2020-08-07 18:56:43.098229 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.138686 (MainThread): Acquiring new bigquery connection "model.asana.asana_tag".
+2020-08-07 18:56:43.138806 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.154649 (MainThread): Acquiring new bigquery connection "model.asana.asana_subtask_parent".
+2020-08-07 18:56:43.154786 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.166632 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_assignee".
+2020-08-07 18:56:43.166756 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.181227 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_first_modifier".
+2020-08-07 18:56:43.181352 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.192672 (MainThread): Acquiring new bigquery connection "model.asana.asana_project_task_metrics".
+2020-08-07 18:56:43.192789 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.208405 (MainThread): Acquiring new bigquery connection "model.asana.asana_user_task_metrics".
+2020-08-07 18:56:43.208571 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.226386 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_comments".
+2020-08-07 18:56:43.226639 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.260573 (MainThread): Acquiring new bigquery connection "model.asana.asana_project_user".
+2020-08-07 18:56:43.260989 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.294849 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_tags".
+2020-08-07 18:56:43.295015 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.311203 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_followers".
+2020-08-07 18:56:43.311327 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.325441 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_open_length".
+2020-08-07 18:56:43.325563 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.343064 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_story".
+2020-08-07 18:56:43.343188 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:43.362755 (MainThread): Acquiring new bigquery connection "model.asana.asana_task_projects".
+2020-08-07 18:56:43.362891 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.158909 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_team".
+2020-08-07 18:56:44.159042 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.171273 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_project_task".
+2020-08-07 18:56:44.171498 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.184176 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_project".
+2020-08-07 18:56:44.184302 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.196784 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task".
+2020-08-07 18:56:44.196927 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.208908 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_user".
+2020-08-07 18:56:44.209031 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.220857 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task_tag".
+2020-08-07 18:56:44.220980 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.233118 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task_follower".
+2020-08-07 18:56:44.233249 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.246097 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_task_section".
+2020-08-07 18:56:44.246220 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.260398 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_tag".
+2020-08-07 18:56:44.260579 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.273372 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_section".
+2020-08-07 18:56:44.273501 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:44.285853 (MainThread): Acquiring new bigquery connection "model.asana_source.stg_asana_story".
+2020-08-07 18:56:44.285978 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:45.635094 (MainThread): Found 29 models, 81 tests, 0 snapshots, 0 analyses, 278 macros, 0 operations, 0 seed files, 11 sources
+2020-08-07 18:56:45.648117 (MainThread): 
+2020-08-07 18:56:45.648520 (MainThread): Acquiring new bigquery connection "master".
+2020-08-07 18:56:45.648712 (MainThread): Opening a new connection, currently in state closed
+2020-08-07 18:56:45.768050 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_dbt-package-testing_dbt_jamie".
+2020-08-07 18:56:45.768364 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-08-07 18:56:45.770472 (ThreadPoolExecutor-0_0): Your application has authenticated using end user credentials from Google Cloud SDK. We recommend that most server applications use service accounts instead. If your application continues to use end user credentials from Cloud SDK, you might receive a "quota exceeded" or "API not enabled" error. For more information about service accounts, see https://cloud.google.com/docs/authentication/
+2020-08-07 18:56:47.497026 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-08-07 18:56:48.223358 (MainThread): 11:56:48 | Concurrency: 4 threads (target='dev')
+2020-08-07 18:56:48.224001 (MainThread): 11:56:48 | 
+2020-08-07 18:56:48.233883 (Thread-1): Began running node model.asana_source.stg_asana_project
+2020-08-07 18:56:48.234432 (Thread-1): Acquiring new bigquery connection "model.asana_source.stg_asana_project".
+2020-08-07 18:56:48.234604 (Thread-2): Began running node model.asana_source.stg_asana_project_task
+2020-08-07 18:56:48.234725 (Thread-3): Began running node model.asana_source.stg_asana_section
+2020-08-07 18:56:48.234839 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.234910 (Thread-4): Began running node model.asana_source.stg_asana_story
+2020-08-07 18:56:48.235247 (Thread-2): Acquiring new bigquery connection "model.asana_source.stg_asana_project_task".
+2020-08-07 18:56:48.235548 (Thread-3): Acquiring new bigquery connection "model.asana_source.stg_asana_section".
+2020-08-07 18:56:48.235916 (Thread-1): Compiling model.asana_source.stg_asana_project
+2020-08-07 18:56:48.236202 (Thread-4): Acquiring new bigquery connection "model.asana_source.stg_asana_story".
+2020-08-07 18:56:48.236336 (Thread-2): Opening a new connection, currently in state init
+2020-08-07 18:56:48.236482 (Thread-3): Opening a new connection, currently in state init
+2020-08-07 18:56:48.241808 (Thread-4): Opening a new connection, currently in state init
+2020-08-07 18:56:48.263114 (Thread-2): Compiling model.asana_source.stg_asana_project_task
+2020-08-07 18:56:48.264748 (Thread-1): Writing injected SQL for node "model.asana_source.stg_asana_project"
+2020-08-07 18:56:48.265004 (Thread-3): Compiling model.asana_source.stg_asana_section
+2020-08-07 18:56:48.265169 (Thread-4): Compiling model.asana_source.stg_asana_story
+2020-08-07 18:56:48.273632 (Thread-2): Writing injected SQL for node "model.asana_source.stg_asana_project_task"
+2020-08-07 18:56:48.288248 (Thread-3): Writing injected SQL for node "model.asana_source.stg_asana_section"
+2020-08-07 18:56:48.292485 (Thread-4): Writing injected SQL for node "model.asana_source.stg_asana_story"
+2020-08-07 18:56:48.292970 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.293383 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.293660 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.293974 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.294322 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.294575 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.294762 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.295167 (Thread-1): Finished running node model.asana_source.stg_asana_project
+2020-08-07 18:56:48.295454 (Thread-2): Finished running node model.asana_source.stg_asana_project_task
+2020-08-07 18:56:48.295602 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.296101 (Thread-3): Finished running node model.asana_source.stg_asana_section
+2020-08-07 18:56:48.296258 (Thread-1): Began running node model.asana_source.stg_asana_tag
+2020-08-07 18:56:48.296876 (Thread-2): Began running node model.asana_source.stg_asana_task
+2020-08-07 18:56:48.297436 (Thread-4): Finished running node model.asana_source.stg_asana_story
+2020-08-07 18:56:48.297599 (Thread-3): Began running node model.asana_source.stg_asana_task_follower
+2020-08-07 18:56:48.297991 (Thread-1): Acquiring new bigquery connection "model.asana_source.stg_asana_tag".
+2020-08-07 18:56:48.298292 (Thread-2): Acquiring new bigquery connection "model.asana_source.stg_asana_task".
+2020-08-07 18:56:48.298443 (Thread-4): Began running node model.asana_source.stg_asana_task_section
+2020-08-07 18:56:48.298900 (Thread-3): Acquiring new bigquery connection "model.asana_source.stg_asana_task_follower".
+2020-08-07 18:56:48.299104 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.299217 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.299434 (Thread-4): Acquiring new bigquery connection "model.asana_source.stg_asana_task_section".
+2020-08-07 18:56:48.299550 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.299690 (Thread-1): Compiling model.asana_source.stg_asana_tag
+2020-08-07 18:56:48.301268 (Thread-2): Compiling model.asana_source.stg_asana_task
+2020-08-07 18:56:48.304108 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.304262 (Thread-3): Compiling model.asana_source.stg_asana_task_follower
+2020-08-07 18:56:48.318257 (Thread-1): Writing injected SQL for node "model.asana_source.stg_asana_tag"
+2020-08-07 18:56:48.323765 (Thread-4): Compiling model.asana_source.stg_asana_task_section
+2020-08-07 18:56:48.324974 (Thread-2): Writing injected SQL for node "model.asana_source.stg_asana_task"
+2020-08-07 18:56:48.332569 (Thread-3): Writing injected SQL for node "model.asana_source.stg_asana_task_follower"
+2020-08-07 18:56:48.340934 (Thread-4): Writing injected SQL for node "model.asana_source.stg_asana_task_section"
+2020-08-07 18:56:48.341438 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.341988 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.342358 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.342670 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.342960 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.343198 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.343418 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.343963 (Thread-1): Finished running node model.asana_source.stg_asana_tag
+2020-08-07 18:56:48.344149 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.344661 (Thread-2): Finished running node model.asana_source.stg_asana_task
+2020-08-07 18:56:48.344999 (Thread-3): Finished running node model.asana_source.stg_asana_task_follower
+2020-08-07 18:56:48.345202 (Thread-1): Began running node model.asana_source.stg_asana_task_tag
+2020-08-07 18:56:48.345777 (Thread-4): Finished running node model.asana_source.stg_asana_task_section
+2020-08-07 18:56:48.346121 (Thread-2): Began running node model.asana_source.stg_asana_user
+2020-08-07 18:56:48.346690 (Thread-3): Began running node model.asana_source.stg_asana_team
+2020-08-07 18:56:48.347264 (Thread-1): Acquiring new bigquery connection "model.asana_source.stg_asana_task_tag".
+2020-08-07 18:56:48.347713 (Thread-4): Began running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_project_task_project_id__task_id
+2020-08-07 18:56:48.348479 (Thread-2): Acquiring new bigquery connection "model.asana_source.stg_asana_user".
+2020-08-07 18:56:48.348822 (Thread-3): Acquiring new bigquery connection "model.asana_source.stg_asana_team".
+2020-08-07 18:56:48.348917 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.349102 (Thread-4): Acquiring new bigquery connection "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_project_task_project_id__task_id".
+2020-08-07 18:56:48.349204 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.349306 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.349408 (Thread-1): Compiling model.asana_source.stg_asana_task_tag
+2020-08-07 18:56:48.349486 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.349570 (Thread-2): Compiling model.asana_source.stg_asana_user
+2020-08-07 18:56:48.349649 (Thread-3): Compiling model.asana_source.stg_asana_team
+2020-08-07 18:56:48.354992 (Thread-4): Compiling test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_project_task_project_id__task_id
+2020-08-07 18:56:48.358350 (Thread-1): Writing injected SQL for node "model.asana_source.stg_asana_task_tag"
+2020-08-07 18:56:48.368254 (Thread-2): Writing injected SQL for node "model.asana_source.stg_asana_user"
+2020-08-07 18:56:48.379404 (Thread-3): Writing injected SQL for node "model.asana_source.stg_asana_team"
+2020-08-07 18:56:48.396850 (Thread-4): Writing injected SQL for node "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_project_task_project_id__task_id"
+2020-08-07 18:56:48.397151 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.397721 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.398143 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.398517 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.398882 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.399237 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.399770 (Thread-1): Finished running node model.asana_source.stg_asana_task_tag
+2020-08-07 18:56:48.400183 (Thread-2): Finished running node model.asana_source.stg_asana_user
+2020-08-07 18:56:48.400543 (Thread-3): Finished running node model.asana_source.stg_asana_team
+2020-08-07 18:56:48.400661 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.401012 (Thread-1): Began running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_follower_task_id__user_id
+2020-08-07 18:56:48.401555 (Thread-2): Began running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_section_section_id__task_id
+2020-08-07 18:56:48.402260 (Thread-3): Began running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_tag_task_id__tag_id
+2020-08-07 18:56:48.402832 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.403376 (Thread-1): Acquiring new bigquery connection "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_follower_task_id__user_id".
+2020-08-07 18:56:48.403629 (Thread-2): Acquiring new bigquery connection "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_section_section_id__task_id".
+2020-08-07 18:56:48.403815 (Thread-3): Acquiring new bigquery connection "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_tag_task_id__tag_id".
+2020-08-07 18:56:48.404064 (Thread-4): Finished running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_project_task_project_id__task_id
+2020-08-07 18:56:48.404195 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.404324 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.404471 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.404626 (Thread-4): Began running node test.asana_source.source_not_null_asana_project_created_at
+2020-08-07 18:56:48.404975 (Thread-1): Compiling test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_follower_task_id__user_id
+2020-08-07 18:56:48.405129 (Thread-2): Compiling test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_section_section_id__task_id
+2020-08-07 18:56:48.405264 (Thread-3): Compiling test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_tag_task_id__tag_id
+2020-08-07 18:56:48.405652 (Thread-4): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_project_created_at".
+2020-08-07 18:56:48.419316 (Thread-1): Writing injected SQL for node "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_follower_task_id__user_id"
+2020-08-07 18:56:48.431398 (Thread-2): Writing injected SQL for node "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_section_section_id__task_id"
+2020-08-07 18:56:48.444796 (Thread-3): Writing injected SQL for node "test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_tag_task_id__tag_id"
+2020-08-07 18:56:48.444930 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.445532 (Thread-4): Compiling test.asana_source.source_not_null_asana_project_created_at
+2020-08-07 18:56:48.450759 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.451314 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.454824 (Thread-4): Writing injected SQL for node "test.asana_source.source_not_null_asana_project_created_at"
+2020-08-07 18:56:48.455134 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.455406 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.455671 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.456148 (Thread-1): Finished running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_follower_task_id__user_id
+2020-08-07 18:56:48.456312 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.456776 (Thread-3): Finished running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_tag_task_id__tag_id
+2020-08-07 18:56:48.456973 (Thread-1): Began running node test.asana_source.source_not_null_asana_project_id
+2020-08-07 18:56:48.457162 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.457652 (Thread-2): Finished running node test.asana_source.dbt_utils_source_unique_combination_of_columns_asana_task_section_section_id__task_id
+2020-08-07 18:56:48.457901 (Thread-3): Began running node test.asana_source.source_not_null_asana_section_id
+2020-08-07 18:56:48.458425 (Thread-1): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_project_id".
+2020-08-07 18:56:48.458570 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.458851 (Thread-2): Began running node test.asana_source.source_not_null_asana_section_project_id
+2020-08-07 18:56:48.459418 (Thread-3): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_section_id".
+2020-08-07 18:56:48.459604 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.459940 (Thread-4): Finished running node test.asana_source.source_not_null_asana_project_created_at
+2020-08-07 18:56:48.460212 (Thread-2): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_section_project_id".
+2020-08-07 18:56:48.460355 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.460517 (Thread-1): Compiling test.asana_source.source_not_null_asana_project_id
+2020-08-07 18:56:48.460629 (Thread-4): Began running node test.asana_source.source_not_null_asana_story_created_at
+2020-08-07 18:56:48.460884 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.461055 (Thread-3): Compiling test.asana_source.source_not_null_asana_section_id
+2020-08-07 18:56:48.469346 (Thread-1): Writing injected SQL for node "test.asana_source.source_not_null_asana_project_id"
+2020-08-07 18:56:48.469622 (Thread-4): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_story_created_at".
+2020-08-07 18:56:48.469742 (Thread-2): Compiling test.asana_source.source_not_null_asana_section_project_id
+2020-08-07 18:56:48.479208 (Thread-3): Writing injected SQL for node "test.asana_source.source_not_null_asana_section_id"
+2020-08-07 18:56:48.479472 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.490054 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.491440 (Thread-2): Writing injected SQL for node "test.asana_source.source_not_null_asana_section_project_id"
+2020-08-07 18:56:48.491623 (Thread-4): Compiling test.asana_source.source_not_null_asana_story_created_at
+2020-08-07 18:56:48.491820 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.492116 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.501461 (Thread-4): Writing injected SQL for node "test.asana_source.source_not_null_asana_story_created_at"
+2020-08-07 18:56:48.501876 (Thread-1): Finished running node test.asana_source.source_not_null_asana_project_id
+2020-08-07 18:56:48.502093 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.502362 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.502656 (Thread-1): Began running node test.asana_source.source_not_null_asana_story_id
+2020-08-07 18:56:48.503156 (Thread-3): Finished running node test.asana_source.source_not_null_asana_section_id
+2020-08-07 18:56:48.503273 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.503494 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.503807 (Thread-1): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_story_id".
+2020-08-07 18:56:48.503922 (Thread-3): Began running node test.asana_source.source_not_null_asana_story_target_id
+2020-08-07 18:56:48.504036 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.504428 (Thread-2): Finished running node test.asana_source.source_not_null_asana_section_project_id
+2020-08-07 18:56:48.504520 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.504740 (Thread-3): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_story_target_id".
+2020-08-07 18:56:48.504958 (Thread-4): Finished running node test.asana_source.source_not_null_asana_story_created_at
+2020-08-07 18:56:48.505076 (Thread-2): Began running node test.asana_source.source_not_null_asana_tag_id
+2020-08-07 18:56:48.505260 (Thread-1): Compiling test.asana_source.source_not_null_asana_story_id
+2020-08-07 18:56:48.505340 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.505440 (Thread-4): Began running node test.asana_source.source_not_null_asana_task_created_at
+2020-08-07 18:56:48.505705 (Thread-2): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_tag_id".
+2020-08-07 18:56:48.514376 (Thread-1): Writing injected SQL for node "test.asana_source.source_not_null_asana_story_id"
+2020-08-07 18:56:48.514499 (Thread-3): Compiling test.asana_source.source_not_null_asana_story_target_id
+2020-08-07 18:56:48.514775 (Thread-4): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_task_created_at".
+2020-08-07 18:56:48.514895 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.520339 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.524723 (Thread-3): Writing injected SQL for node "test.asana_source.source_not_null_asana_story_target_id"
+2020-08-07 18:56:48.524954 (Thread-2): Compiling test.asana_source.source_not_null_asana_tag_id
+2020-08-07 18:56:48.525081 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.525344 (Thread-4): Compiling test.asana_source.source_not_null_asana_task_created_at
+2020-08-07 18:56:48.534588 (Thread-2): Writing injected SQL for node "test.asana_source.source_not_null_asana_tag_id"
+2020-08-07 18:56:48.534772 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.541014 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.544611 (Thread-4): Writing injected SQL for node "test.asana_source.source_not_null_asana_task_created_at"
+2020-08-07 18:56:48.544985 (Thread-1): Finished running node test.asana_source.source_not_null_asana_story_id
+2020-08-07 18:56:48.545165 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.545652 (Thread-1): Began running node test.asana_source.source_not_null_asana_task_id
+2020-08-07 18:56:48.545778 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.546543 (Thread-3): Finished running node test.asana_source.source_not_null_asana_story_target_id
+2020-08-07 18:56:48.546783 (Thread-1): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_task_id".
+2020-08-07 18:56:48.546972 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.547610 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.548266 (Thread-3): Began running node test.asana_source.source_not_null_asana_team_id
+2020-08-07 18:56:48.548950 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.549128 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.550254 (Thread-2): Finished running node test.asana_source.source_not_null_asana_tag_id
+2020-08-07 18:56:48.551045 (Thread-3): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_team_id".
+2020-08-07 18:56:48.551394 (Thread-1): Compiling test.asana_source.source_not_null_asana_task_id
+2020-08-07 18:56:48.552077 (Thread-4): Finished running node test.asana_source.source_not_null_asana_task_created_at
+2020-08-07 18:56:48.552466 (Thread-2): Began running node test.asana_source.source_not_null_asana_user_id
+2020-08-07 18:56:48.552858 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.564359 (Thread-4): Began running node test.asana_source.source_unique_asana_project_id
+2020-08-07 18:56:48.565942 (Thread-1): Writing injected SQL for node "test.asana_source.source_not_null_asana_task_id"
+2020-08-07 18:56:48.566400 (Thread-2): Acquiring new bigquery connection "test.asana_source.source_not_null_asana_user_id".
+2020-08-07 18:56:48.566541 (Thread-3): Compiling test.asana_source.source_not_null_asana_team_id
+2020-08-07 18:56:48.566779 (Thread-4): Acquiring new bigquery connection "test.asana_source.source_unique_asana_project_id".
+2020-08-07 18:56:48.567069 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.575805 (Thread-3): Writing injected SQL for node "test.asana_source.source_not_null_asana_team_id"
+2020-08-07 18:56:48.575954 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.576033 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.576245 (Thread-2): Compiling test.asana_source.source_not_null_asana_user_id
+2020-08-07 18:56:48.576417 (Thread-4): Compiling test.asana_source.source_unique_asana_project_id
+2020-08-07 18:56:48.576552 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.583101 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.591495 (Thread-2): Writing injected SQL for node "test.asana_source.source_not_null_asana_user_id"
+2020-08-07 18:56:48.593075 (Thread-4): Writing injected SQL for node "test.asana_source.source_unique_asana_project_id"
+2020-08-07 18:56:48.593368 (Thread-1): Finished running node test.asana_source.source_not_null_asana_task_id
+2020-08-07 18:56:48.593529 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.594042 (Thread-1): Began running node test.asana_source.source_unique_asana_section_id
+2020-08-07 18:56:48.594562 (Thread-3): Finished running node test.asana_source.source_not_null_asana_team_id
+2020-08-07 18:56:48.594677 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.594861 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.595198 (Thread-1): Acquiring new bigquery connection "test.asana_source.source_unique_asana_section_id".
+2020-08-07 18:56:48.595351 (Thread-3): Began running node test.asana_source.source_unique_asana_story_id
+2020-08-07 18:56:48.595639 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.595842 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.596014 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.596223 (Thread-3): Acquiring new bigquery connection "test.asana_source.source_unique_asana_story_id".
+2020-08-07 18:56:48.596441 (Thread-4): Finished running node test.asana_source.source_unique_asana_project_id
+2020-08-07 18:56:48.596686 (Thread-2): Finished running node test.asana_source.source_not_null_asana_user_id
+2020-08-07 18:56:48.596795 (Thread-1): Compiling test.asana_source.source_unique_asana_section_id
+2020-08-07 18:56:48.596872 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.596974 (Thread-4): Began running node test.asana_source.source_unique_asana_tag_id
+2020-08-07 18:56:48.597352 (Thread-2): Began running node test.asana_source.source_unique_asana_task_id
+2020-08-07 18:56:48.613841 (Thread-1): Writing injected SQL for node "test.asana_source.source_unique_asana_section_id"
+2020-08-07 18:56:48.613996 (Thread-3): Compiling test.asana_source.source_unique_asana_story_id
+2020-08-07 18:56:48.614336 (Thread-4): Acquiring new bigquery connection "test.asana_source.source_unique_asana_tag_id".
+2020-08-07 18:56:48.614601 (Thread-2): Acquiring new bigquery connection "test.asana_source.source_unique_asana_task_id".
+2020-08-07 18:56:48.625160 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.625633 (Thread-3): Writing injected SQL for node "test.asana_source.source_unique_asana_story_id"
+2020-08-07 18:56:48.625858 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.625999 (Thread-4): Compiling test.asana_source.source_unique_asana_tag_id
+2020-08-07 18:56:48.626102 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.626459 (Thread-2): Compiling test.asana_source.source_unique_asana_task_id
+2020-08-07 18:56:48.634277 (Thread-4): Writing injected SQL for node "test.asana_source.source_unique_asana_tag_id"
+2020-08-07 18:56:48.634460 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.634641 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.643058 (Thread-2): Writing injected SQL for node "test.asana_source.source_unique_asana_task_id"
+2020-08-07 18:56:48.643625 (Thread-1): Finished running node test.asana_source.source_unique_asana_section_id
+2020-08-07 18:56:48.643838 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.644119 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.644351 (Thread-1): Began running node test.asana_source.source_unique_asana_team_id
+2020-08-07 18:56:48.644735 (Thread-3): Finished running node test.asana_source.source_unique_asana_story_id
+2020-08-07 18:56:48.644879 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.645225 (Thread-1): Acquiring new bigquery connection "test.asana_source.source_unique_asana_team_id".
+2020-08-07 18:56:48.645336 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.645620 (Thread-3): Began running node test.asana_source.source_unique_asana_user_id
+2020-08-07 18:56:48.646010 (Thread-4): Finished running node test.asana_source.source_unique_asana_tag_id
+2020-08-07 18:56:48.646162 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.646501 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.647451 (Thread-3): Acquiring new bigquery connection "test.asana_source.source_unique_asana_user_id".
+2020-08-07 18:56:48.647774 (Thread-4): Began running node test.asana_source.not_null_stg_asana_project_project_id
+2020-08-07 18:56:48.648077 (Thread-1): Compiling test.asana_source.source_unique_asana_team_id
+2020-08-07 18:56:48.648860 (Thread-2): Finished running node test.asana_source.source_unique_asana_task_id
+2020-08-07 18:56:48.649117 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.649841 (Thread-4): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_project_project_id".
+2020-08-07 18:56:48.667084 (Thread-2): Began running node test.asana_source.unique_stg_asana_project_project_id
+2020-08-07 18:56:48.669918 (Thread-1): Writing injected SQL for node "test.asana_source.source_unique_asana_team_id"
+2020-08-07 18:56:48.670257 (Thread-3): Compiling test.asana_source.source_unique_asana_user_id
+2020-08-07 18:56:48.670446 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.670806 (Thread-2): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_project_project_id".
+2020-08-07 18:56:48.680532 (Thread-3): Writing injected SQL for node "test.asana_source.source_unique_asana_user_id"
+2020-08-07 18:56:48.680764 (Thread-4): Compiling test.asana_source.not_null_stg_asana_project_project_id
+2020-08-07 18:56:48.680910 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.681096 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.690382 (Thread-4): Writing injected SQL for node "test.asana_source.not_null_stg_asana_project_project_id"
+2020-08-07 18:56:48.690621 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.690803 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.691009 (Thread-2): Compiling test.asana_source.unique_stg_asana_project_project_id
+2020-08-07 18:56:48.691431 (Thread-1): Finished running node test.asana_source.source_unique_asana_team_id
+2020-08-07 18:56:48.691580 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.699590 (Thread-2): Writing injected SQL for node "test.asana_source.unique_stg_asana_project_project_id"
+2020-08-07 18:56:48.699876 (Thread-1): Began running node test.asana_source.not_null_stg_asana_project_task_project_id
+2020-08-07 18:56:48.700027 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.700546 (Thread-3): Finished running node test.asana_source.source_unique_asana_user_id
+2020-08-07 18:56:48.700989 (Thread-1): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_project_task_project_id".
+2020-08-07 18:56:48.701168 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.701527 (Thread-3): Began running node test.asana_source.not_null_stg_asana_project_task_task_id
+2020-08-07 18:56:48.701916 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.702073 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.702590 (Thread-4): Finished running node test.asana_source.not_null_stg_asana_project_project_id
+2020-08-07 18:56:48.702910 (Thread-3): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_project_task_task_id".
+2020-08-07 18:56:48.703051 (Thread-1): Compiling test.asana_source.not_null_stg_asana_project_task_project_id
+2020-08-07 18:56:48.703285 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.703791 (Thread-4): Began running node test.asana_source.not_null_stg_asana_section_section_id
+2020-08-07 18:56:48.703995 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.713511 (Thread-1): Writing injected SQL for node "test.asana_source.not_null_stg_asana_project_task_project_id"
+2020-08-07 18:56:48.713839 (Thread-2): Finished running node test.asana_source.unique_stg_asana_project_project_id
+2020-08-07 18:56:48.714114 (Thread-4): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_section_section_id".
+2020-08-07 18:56:48.714236 (Thread-3): Compiling test.asana_source.not_null_stg_asana_project_task_task_id
+2020-08-07 18:56:48.714481 (Thread-2): Began running node test.asana_source.unique_stg_asana_section_section_id
+2020-08-07 18:56:48.714710 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.722683 (Thread-3): Writing injected SQL for node "test.asana_source.not_null_stg_asana_project_task_task_id"
+2020-08-07 18:56:48.722813 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.723171 (Thread-2): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_section_section_id".
+2020-08-07 18:56:48.723297 (Thread-4): Compiling test.asana_source.not_null_stg_asana_section_section_id
+2020-08-07 18:56:48.723512 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.723826 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.723914 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.729473 (Thread-1): Finished running node test.asana_source.not_null_stg_asana_project_task_project_id
+2020-08-07 18:56:48.732210 (Thread-4): Writing injected SQL for node "test.asana_source.not_null_stg_asana_section_section_id"
+2020-08-07 18:56:48.732419 (Thread-2): Compiling test.asana_source.unique_stg_asana_section_section_id
+2020-08-07 18:56:48.732686 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.733116 (Thread-1): Began running node test.asana_source.not_null_stg_asana_story_story_id
+2020-08-07 18:56:48.741823 (Thread-2): Writing injected SQL for node "test.asana_source.unique_stg_asana_section_section_id"
+2020-08-07 18:56:48.742144 (Thread-3): Finished running node test.asana_source.not_null_stg_asana_project_task_task_id
+2020-08-07 18:56:48.742232 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.742542 (Thread-1): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_story_story_id".
+2020-08-07 18:56:48.742805 (Thread-3): Began running node test.asana_source.not_null_stg_asana_story_target_task_id
+2020-08-07 18:56:48.743088 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.743283 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.743454 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.743649 (Thread-3): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_story_target_task_id".
+2020-08-07 18:56:48.743756 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.744056 (Thread-4): Finished running node test.asana_source.not_null_stg_asana_section_section_id
+2020-08-07 18:56:48.744154 (Thread-1): Compiling test.asana_source.not_null_stg_asana_story_story_id
+2020-08-07 18:56:48.744227 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.744424 (Thread-2): Finished running node test.asana_source.unique_stg_asana_section_section_id
+2020-08-07 18:56:48.744537 (Thread-4): Began running node test.asana_source.unique_stg_asana_story_story_id
+2020-08-07 18:56:48.755777 (Thread-1): Writing injected SQL for node "test.asana_source.not_null_stg_asana_story_story_id"
+2020-08-07 18:56:48.755980 (Thread-3): Compiling test.asana_source.not_null_stg_asana_story_target_task_id
+2020-08-07 18:56:48.756221 (Thread-2): Began running node test.asana_source.not_null_stg_asana_tag_tag_id
+2020-08-07 18:56:48.756692 (Thread-4): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_story_story_id".
+2020-08-07 18:56:48.766410 (Thread-3): Writing injected SQL for node "test.asana_source.not_null_stg_asana_story_target_task_id"
+2020-08-07 18:56:48.766786 (Thread-2): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_tag_tag_id".
+2020-08-07 18:56:48.766939 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.767101 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.767611 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.767757 (Thread-4): Compiling test.asana_source.unique_stg_asana_story_story_id
+2020-08-07 18:56:48.767994 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.768239 (Thread-2): Compiling test.asana_source.not_null_stg_asana_tag_tag_id
+2020-08-07 18:56:48.773622 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.778861 (Thread-4): Writing injected SQL for node "test.asana_source.unique_stg_asana_story_story_id"
+2020-08-07 18:56:48.779238 (Thread-1): Finished running node test.asana_source.not_null_stg_asana_story_story_id
+2020-08-07 18:56:48.787551 (Thread-2): Writing injected SQL for node "test.asana_source.not_null_stg_asana_tag_tag_id"
+2020-08-07 18:56:48.787689 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.788062 (Thread-1): Began running node test.asana_source.unique_stg_asana_tag_tag_id
+2020-08-07 18:56:48.788686 (Thread-3): Finished running node test.asana_source.not_null_stg_asana_story_target_task_id
+2020-08-07 18:56:48.788923 (Thread-1): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_tag_tag_id".
+2020-08-07 18:56:48.789006 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.789227 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.789433 (Thread-3): Began running node test.asana_source.not_null_stg_asana_task_task_id
+2020-08-07 18:56:48.789615 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.789718 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.789907 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.790185 (Thread-3): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_task_id".
+2020-08-07 18:56:48.790279 (Thread-1): Compiling test.asana_source.unique_stg_asana_tag_tag_id
+2020-08-07 18:56:48.790494 (Thread-4): Finished running node test.asana_source.unique_stg_asana_story_story_id
+2020-08-07 18:56:48.790704 (Thread-2): Finished running node test.asana_source.not_null_stg_asana_tag_tag_id
+2020-08-07 18:56:48.790790 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.800045 (Thread-1): Writing injected SQL for node "test.asana_source.unique_stg_asana_tag_tag_id"
+2020-08-07 18:56:48.800199 (Thread-4): Began running node test.asana_source.unique_stg_asana_task_task_id
+2020-08-07 18:56:48.800456 (Thread-2): Began running node test.asana_source.not_null_stg_asana_task_follower_task_id
+2020-08-07 18:56:48.800579 (Thread-3): Compiling test.asana_source.not_null_stg_asana_task_task_id
+2020-08-07 18:56:48.801035 (Thread-4): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_task_task_id".
+2020-08-07 18:56:48.801248 (Thread-2): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_follower_task_id".
+2020-08-07 18:56:48.806674 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.810209 (Thread-3): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_task_id"
+2020-08-07 18:56:48.810377 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.810520 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.810692 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.811116 (Thread-4): Compiling test.asana_source.unique_stg_asana_task_task_id
+2020-08-07 18:56:48.811316 (Thread-2): Compiling test.asana_source.not_null_stg_asana_task_follower_task_id
+2020-08-07 18:56:48.811651 (Thread-1): Finished running node test.asana_source.unique_stg_asana_tag_tag_id
+2020-08-07 18:56:48.840971 (Thread-1): Began running node test.asana_source.not_null_stg_asana_task_follower_user_id
+2020-08-07 18:56:48.841531 (Thread-1): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_follower_user_id".
+2020-08-07 18:56:48.841689 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.841816 (Thread-1): Compiling test.asana_source.not_null_stg_asana_task_follower_user_id
+2020-08-07 18:56:48.811744 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.862812 (Thread-1): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_follower_user_id"
+2020-08-07 18:56:48.835500 (Thread-4): Writing injected SQL for node "test.asana_source.unique_stg_asana_task_task_id"
+2020-08-07 18:56:48.864575 (Thread-2): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_follower_task_id"
+2020-08-07 18:56:48.864763 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.865738 (Thread-3): Finished running node test.asana_source.not_null_stg_asana_task_task_id
+2020-08-07 18:56:48.865972 (Thread-3): Began running node model.asana.asana_task_projects
+2020-08-07 18:56:48.866143 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.866718 (Thread-3): Acquiring new bigquery connection "model.asana.asana_task_projects".
+2020-08-07 18:56:48.866955 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.867336 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.867552 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.867637 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.868165 (Thread-1): Finished running node test.asana_source.not_null_stg_asana_task_follower_user_id
+2020-08-07 18:56:48.868326 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.868724 (Thread-3): Compiling model.asana.asana_task_projects
+2020-08-07 18:56:48.868898 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.869209 (Thread-1): Began running node test.asana_source.not_null_stg_asana_task_section_section_id
+2020-08-07 18:56:48.869619 (Thread-4): Finished running node test.asana_source.unique_stg_asana_task_task_id
+2020-08-07 18:56:48.885682 (Thread-2): Finished running node test.asana_source.not_null_stg_asana_task_follower_task_id
+2020-08-07 18:56:48.887311 (Thread-3): Writing injected SQL for node "model.asana.asana_task_projects"
+2020-08-07 18:56:48.887607 (Thread-1): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_section_section_id".
+2020-08-07 18:56:48.887742 (Thread-4): Began running node test.asana_source.not_null_stg_asana_task_section_task_id
+2020-08-07 18:56:48.887987 (Thread-2): Began running node model.asana.asana_task_tags
+2020-08-07 18:56:48.888315 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.888556 (Thread-4): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_section_task_id".
+2020-08-07 18:56:48.888767 (Thread-2): Acquiring new bigquery connection "model.asana.asana_task_tags".
+2020-08-07 18:56:48.888933 (Thread-1): Compiling test.asana_source.not_null_stg_asana_task_section_section_id
+2020-08-07 18:56:48.889073 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.889230 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.889416 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.898707 (Thread-1): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_section_section_id"
+2020-08-07 18:56:48.898923 (Thread-4): Compiling test.asana_source.not_null_stg_asana_task_section_task_id
+2020-08-07 18:56:48.899298 (Thread-3): Finished running node model.asana.asana_task_projects
+2020-08-07 18:56:48.899529 (Thread-2): Compiling model.asana.asana_task_tags
+2020-08-07 18:56:48.907985 (Thread-4): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_section_task_id"
+2020-08-07 18:56:48.908254 (Thread-3): Began running node test.asana_source.not_null_stg_asana_task_tag_tag_id
+2020-08-07 18:56:48.908746 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.919254 (Thread-2): Writing injected SQL for node "model.asana.asana_task_tags"
+2020-08-07 18:56:48.919832 (Thread-3): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_tag_tag_id".
+2020-08-07 18:56:48.919964 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.920379 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.920846 (Thread-1): Finished running node test.asana_source.not_null_stg_asana_task_section_section_id
+2020-08-07 18:56:48.921013 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.921240 (Thread-3): Compiling test.asana_source.not_null_stg_asana_task_tag_tag_id
+2020-08-07 18:56:48.921417 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.921641 (Thread-1): Began running node test.asana_source.not_null_stg_asana_task_tag_task_id
+2020-08-07 18:56:48.921921 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.929967 (Thread-3): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_tag_tag_id"
+2020-08-07 18:56:48.930245 (Thread-2): Finished running node model.asana.asana_task_tags
+2020-08-07 18:56:48.930477 (Thread-1): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_task_tag_task_id".
+2020-08-07 18:56:48.930714 (Thread-4): Finished running node test.asana_source.not_null_stg_asana_task_section_task_id
+2020-08-07 18:56:48.930921 (Thread-2): Began running node model.asana.asana_task_assignee
+2020-08-07 18:56:48.931248 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.931395 (Thread-4): Began running node model.asana.asana_task_followers
+2020-08-07 18:56:48.931491 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.931879 (Thread-2): Acquiring new bigquery connection "model.asana.asana_task_assignee".
+2020-08-07 18:56:48.931989 (Thread-1): Compiling test.asana_source.not_null_stg_asana_task_tag_task_id
+2020-08-07 18:56:48.932234 (Thread-4): Acquiring new bigquery connection "model.asana.asana_task_followers".
+2020-08-07 18:56:48.932442 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.932681 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.941159 (Thread-1): Writing injected SQL for node "test.asana_source.not_null_stg_asana_task_tag_task_id"
+2020-08-07 18:56:48.941296 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.941691 (Thread-3): Finished running node test.asana_source.not_null_stg_asana_task_tag_tag_id
+2020-08-07 18:56:48.941955 (Thread-2): Compiling model.asana.asana_task_assignee
+2020-08-07 18:56:48.942192 (Thread-4): Compiling model.asana.asana_task_followers
+2020-08-07 18:56:48.942486 (Thread-3): Began running node model.asana.asana_task_story
+2020-08-07 18:56:48.942814 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.952573 (Thread-2): Writing injected SQL for node "model.asana.asana_task_assignee"
+2020-08-07 18:56:48.964273 (Thread-4): Writing injected SQL for node "model.asana.asana_task_followers"
+2020-08-07 18:56:48.964591 (Thread-3): Acquiring new bigquery connection "model.asana.asana_task_story".
+2020-08-07 18:56:48.964747 (Thread-1): finished collecting timing info
+2020-08-07 18:56:48.965241 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.965543 (Thread-1): Finished running node test.asana_source.not_null_stg_asana_task_tag_task_id
+2020-08-07 18:56:48.965672 (Thread-4): finished collecting timing info
+2020-08-07 18:56:48.965879 (Thread-2): finished collecting timing info
+2020-08-07 18:56:48.966048 (Thread-3): Compiling model.asana.asana_task_story
+2020-08-07 18:56:48.966168 (Thread-1): Began running node test.asana_source.not_null_stg_asana_user_user_id
+2020-08-07 18:56:48.966434 (Thread-4): Finished running node model.asana.asana_task_followers
+2020-08-07 18:56:48.966743 (Thread-2): Finished running node model.asana.asana_task_assignee
+2020-08-07 18:56:48.978340 (Thread-1): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_user_user_id".
+2020-08-07 18:56:48.982521 (Thread-3): Writing injected SQL for node "model.asana.asana_task_story"
+2020-08-07 18:56:48.982688 (Thread-4): Began running node test.asana_source.unique_stg_asana_user_user_id
+2020-08-07 18:56:48.983015 (Thread-2): Began running node test.asana_source.not_null_stg_asana_team_team_id
+2020-08-07 18:56:48.983323 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.983648 (Thread-4): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_user_user_id".
+2020-08-07 18:56:48.983915 (Thread-2): Acquiring new bigquery connection "test.asana_source.not_null_stg_asana_team_team_id".
+2020-08-07 18:56:48.984036 (Thread-1): Compiling test.asana_source.not_null_stg_asana_user_user_id
+2020-08-07 18:56:48.984131 (Thread-3): finished collecting timing info
+2020-08-07 18:56:48.984354 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.984440 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:48.991058 (Thread-3): Finished running node model.asana.asana_task_story
+2020-08-07 18:56:48.993838 (Thread-1): Writing injected SQL for node "test.asana_source.not_null_stg_asana_user_user_id"
+2020-08-07 18:56:48.994021 (Thread-4): Compiling test.asana_source.unique_stg_asana_user_user_id
+2020-08-07 18:56:48.994132 (Thread-2): Compiling test.asana_source.not_null_stg_asana_team_team_id
+2020-08-07 18:56:48.994284 (Thread-3): Began running node test.asana_source.unique_stg_asana_team_team_id
+2020-08-07 18:56:49.004655 (Thread-4): Writing injected SQL for node "test.asana_source.unique_stg_asana_user_user_id"
+2020-08-07 18:56:49.013852 (Thread-2): Writing injected SQL for node "test.asana_source.not_null_stg_asana_team_team_id"
+2020-08-07 18:56:49.014043 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.014436 (Thread-3): Acquiring new bigquery connection "test.asana_source.unique_stg_asana_team_team_id".
+2020-08-07 18:56:49.014973 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.015231 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.015458 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.015726 (Thread-1): Finished running node test.asana_source.not_null_stg_asana_user_user_id
+2020-08-07 18:56:49.015848 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.016013 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.016187 (Thread-3): Compiling test.asana_source.unique_stg_asana_team_team_id
+2020-08-07 18:56:49.016295 (Thread-1): Began running node test.asana.not_null_asana_task_projects_task_id
+2020-08-07 18:56:49.016573 (Thread-4): Finished running node test.asana_source.unique_stg_asana_user_user_id
+2020-08-07 18:56:49.016798 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.025027 (Thread-3): Writing injected SQL for node "test.asana_source.unique_stg_asana_team_team_id"
+2020-08-07 18:56:49.025281 (Thread-1): Acquiring new bigquery connection "test.asana.not_null_asana_task_projects_task_id".
+2020-08-07 18:56:49.025420 (Thread-4): Began running node test.asana.unique_asana_task_projects_task_id
+2020-08-07 18:56:49.025666 (Thread-2): Finished running node test.asana_source.not_null_stg_asana_team_team_id
+2020-08-07 18:56:49.025966 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.026200 (Thread-4): Acquiring new bigquery connection "test.asana.unique_asana_task_projects_task_id".
+2020-08-07 18:56:49.026370 (Thread-2): Began running node test.asana.not_null_asana_task_tags_task_id
+2020-08-07 18:56:49.026547 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.026738 (Thread-1): Compiling test.asana.not_null_asana_task_projects_task_id
+2020-08-07 18:56:49.026860 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.027133 (Thread-2): Acquiring new bigquery connection "test.asana.not_null_asana_task_tags_task_id".
+2020-08-07 18:56:49.027278 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.037181 (Thread-1): Writing injected SQL for node "test.asana.not_null_asana_task_projects_task_id"
+2020-08-07 18:56:49.037295 (Thread-4): Compiling test.asana.unique_asana_task_projects_task_id
+2020-08-07 18:56:49.037393 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.037689 (Thread-3): Finished running node test.asana_source.unique_stg_asana_team_team_id
+2020-08-07 18:56:49.049792 (Thread-4): Writing injected SQL for node "test.asana.unique_asana_task_projects_task_id"
+2020-08-07 18:56:49.049933 (Thread-2): Compiling test.asana.not_null_asana_task_tags_task_id
+2020-08-07 18:56:49.050107 (Thread-3): Began running node test.asana.unique_asana_task_tags_task_id
+2020-08-07 18:56:49.061944 (Thread-2): Writing injected SQL for node "test.asana.not_null_asana_task_tags_task_id"
+2020-08-07 18:56:49.062431 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.062932 (Thread-3): Acquiring new bigquery connection "test.asana.unique_asana_task_tags_task_id".
+2020-08-07 18:56:49.063203 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.063496 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.063784 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.063987 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.064146 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.064497 (Thread-1): Finished running node test.asana.not_null_asana_task_projects_task_id
+2020-08-07 18:56:49.064632 (Thread-3): Compiling test.asana.unique_asana_task_tags_task_id
+2020-08-07 18:56:49.064880 (Thread-4): Finished running node test.asana.unique_asana_task_projects_task_id
+2020-08-07 18:56:49.064987 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.065211 (Thread-1): Began running node test.asana.not_null_asana_task_followers_task_id
+2020-08-07 18:56:49.075741 (Thread-3): Writing injected SQL for node "test.asana.unique_asana_task_tags_task_id"
+2020-08-07 18:56:49.075913 (Thread-4): Began running node test.asana.unique_asana_task_followers_task_id
+2020-08-07 18:56:49.076282 (Thread-2): Finished running node test.asana.not_null_asana_task_tags_task_id
+2020-08-07 18:56:49.076498 (Thread-1): Acquiring new bigquery connection "test.asana.not_null_asana_task_followers_task_id".
+2020-08-07 18:56:49.076818 (Thread-4): Acquiring new bigquery connection "test.asana.unique_asana_task_followers_task_id".
+2020-08-07 18:56:49.076988 (Thread-2): Began running node model.asana.asana_subtask_parent
+2020-08-07 18:56:49.077095 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.077243 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.077428 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.077637 (Thread-2): Acquiring new bigquery connection "model.asana.asana_subtask_parent".
+2020-08-07 18:56:49.077749 (Thread-1): Compiling test.asana.not_null_asana_task_followers_task_id
+2020-08-07 18:56:49.077860 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.078045 (Thread-4): Compiling test.asana.unique_asana_task_followers_task_id
+2020-08-07 18:56:49.078127 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.087255 (Thread-1): Writing injected SQL for node "test.asana.not_null_asana_task_followers_task_id"
+2020-08-07 18:56:49.087657 (Thread-3): Finished running node test.asana.unique_asana_task_tags_task_id
+2020-08-07 18:56:49.093030 (Thread-2): Compiling model.asana.asana_subtask_parent
+2020-08-07 18:56:49.100381 (Thread-4): Writing injected SQL for node "test.asana.unique_asana_task_followers_task_id"
+2020-08-07 18:56:49.100728 (Thread-3): Began running node model.asana.asana_project_user
+2020-08-07 18:56:49.118707 (Thread-3): Acquiring new bigquery connection "model.asana.asana_project_user".
+2020-08-07 18:56:49.118987 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.120121 (Thread-2): Writing injected SQL for node "model.asana.asana_subtask_parent"
+2020-08-07 18:56:49.120325 (Thread-3): Compiling model.asana.asana_project_user
+2020-08-07 18:56:49.120536 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.127169 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.144017 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.148337 (Thread-3): Writing injected SQL for node "model.asana.asana_project_user"
+2020-08-07 18:56:49.148580 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.148815 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.149199 (Thread-1): Finished running node test.asana.not_null_asana_task_followers_task_id
+2020-08-07 18:56:49.149923 (Thread-2): Finished running node model.asana.asana_subtask_parent
+2020-08-07 18:56:49.150895 (Thread-4): Finished running node test.asana.unique_asana_task_followers_task_id
+2020-08-07 18:56:49.151222 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.151933 (Thread-1): Began running node test.asana.not_null_asana_task_assignee_task_id
+2020-08-07 18:56:49.152488 (Thread-2): Began running node test.asana.unique_asana_task_assignee_task_id
+2020-08-07 18:56:49.153007 (Thread-4): Began running node model.asana.asana_task_comments
+2020-08-07 18:56:49.153962 (Thread-3): Finished running node model.asana.asana_project_user
+2020-08-07 18:56:49.154468 (Thread-1): Acquiring new bigquery connection "test.asana.not_null_asana_task_assignee_task_id".
+2020-08-07 18:56:49.155044 (Thread-2): Acquiring new bigquery connection "test.asana.unique_asana_task_assignee_task_id".
+2020-08-07 18:56:49.155718 (Thread-4): Acquiring new bigquery connection "model.asana.asana_task_comments".
+2020-08-07 18:56:49.155987 (Thread-3): Began running node model.asana.asana_task_first_modifier
+2020-08-07 18:56:49.156367 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.156640 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.156757 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.157048 (Thread-3): Acquiring new bigquery connection "model.asana.asana_task_first_modifier".
+2020-08-07 18:56:49.157268 (Thread-1): Compiling test.asana.not_null_asana_task_assignee_task_id
+2020-08-07 18:56:49.157487 (Thread-2): Compiling test.asana.unique_asana_task_assignee_task_id
+2020-08-07 18:56:49.157634 (Thread-4): Compiling model.asana.asana_task_comments
+2020-08-07 18:56:49.157746 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.182912 (Thread-1): Writing injected SQL for node "test.asana.not_null_asana_task_assignee_task_id"
+2020-08-07 18:56:49.184198 (Thread-2): Writing injected SQL for node "test.asana.unique_asana_task_assignee_task_id"
+2020-08-07 18:56:49.195404 (Thread-3): Compiling model.asana.asana_task_first_modifier
+2020-08-07 18:56:49.199164 (Thread-4): Writing injected SQL for node "model.asana.asana_task_comments"
+2020-08-07 18:56:49.216441 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.222439 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.222853 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.227064 (Thread-3): Writing injected SQL for node "model.asana.asana_task_first_modifier"
+2020-08-07 18:56:49.227286 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.227878 (Thread-2): Finished running node test.asana.unique_asana_task_assignee_task_id
+2020-08-07 18:56:49.228001 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.228628 (Thread-1): Finished running node test.asana.not_null_asana_task_assignee_task_id
+2020-08-07 18:56:49.228798 (Thread-2): Began running node model.asana.asana_task_open_length
+2020-08-07 18:56:49.229039 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.229452 (Thread-4): Finished running node model.asana.asana_task_comments
+2020-08-07 18:56:49.229688 (Thread-1): Began running node test.asana.not_null_asana_task_story_story_id
+2020-08-07 18:56:49.229961 (Thread-2): Acquiring new bigquery connection "model.asana.asana_task_open_length".
+2020-08-07 18:56:49.230292 (Thread-3): Finished running node model.asana.asana_task_first_modifier
+2020-08-07 18:56:49.230437 (Thread-4): Began running node test.asana.unique_asana_task_story_story_id
+2020-08-07 18:56:49.230696 (Thread-1): Acquiring new bigquery connection "test.asana.not_null_asana_task_story_story_id".
+2020-08-07 18:56:49.231068 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.231187 (Thread-3): Began running node test.asana.not_null_asana_subtask_parent_subtask_id
+2020-08-07 18:56:49.231416 (Thread-4): Acquiring new bigquery connection "test.asana.unique_asana_task_story_story_id".
+2020-08-07 18:56:49.231640 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.231762 (Thread-2): Compiling model.asana.asana_task_open_length
+2020-08-07 18:56:49.231983 (Thread-3): Acquiring new bigquery connection "test.asana.not_null_asana_subtask_parent_subtask_id".
+2020-08-07 18:56:49.232079 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.232175 (Thread-1): Compiling test.asana.not_null_asana_task_story_story_id
+2020-08-07 18:56:49.242954 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.259797 (Thread-4): Compiling test.asana.unique_asana_task_story_story_id
+2020-08-07 18:56:49.262732 (Thread-2): Writing injected SQL for node "model.asana.asana_task_open_length"
+2020-08-07 18:56:49.269087 (Thread-3): Compiling test.asana.not_null_asana_subtask_parent_subtask_id
+2020-08-07 18:56:49.272346 (Thread-1): Writing injected SQL for node "test.asana.not_null_asana_task_story_story_id"
+2020-08-07 18:56:49.283196 (Thread-4): Writing injected SQL for node "test.asana.unique_asana_task_story_story_id"
+2020-08-07 18:56:49.292486 (Thread-3): Writing injected SQL for node "test.asana.not_null_asana_subtask_parent_subtask_id"
+2020-08-07 18:56:49.292834 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.293507 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.294149 (Thread-2): Finished running node model.asana.asana_task_open_length
+2020-08-07 18:56:49.294411 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.294679 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.294879 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.295116 (Thread-2): Began running node test.asana.unique_asana_subtask_parent_subtask_id
+2020-08-07 18:56:49.295578 (Thread-1): Finished running node test.asana.not_null_asana_task_story_story_id
+2020-08-07 18:56:49.295856 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.296091 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.296431 (Thread-2): Acquiring new bigquery connection "test.asana.unique_asana_subtask_parent_subtask_id".
+2020-08-07 18:56:49.296587 (Thread-1): Began running node test.asana.unique_asana_project_user_project_id_user_id_role_currently_working_on
+2020-08-07 18:56:49.297043 (Thread-4): Finished running node test.asana.unique_asana_task_story_story_id
+2020-08-07 18:56:49.297421 (Thread-3): Finished running node test.asana.not_null_asana_subtask_parent_subtask_id
+2020-08-07 18:56:49.297562 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.297920 (Thread-1): Acquiring new bigquery connection "test.asana.unique_asana_project_user_project_id_user_id_role_currently_working_on".
+2020-08-07 18:56:49.298097 (Thread-4): Began running node test.asana.not_null_asana_task_comments_task_id
+2020-08-07 18:56:49.298334 (Thread-3): Began running node test.asana.unique_asana_task_comments_task_id
+2020-08-07 18:56:49.298589 (Thread-2): Compiling test.asana.unique_asana_subtask_parent_subtask_id
+2020-08-07 18:56:49.298753 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.299007 (Thread-4): Acquiring new bigquery connection "test.asana.not_null_asana_task_comments_task_id".
+2020-08-07 18:56:49.299248 (Thread-3): Acquiring new bigquery connection "test.asana.unique_asana_task_comments_task_id".
+2020-08-07 18:56:49.312888 (Thread-2): Writing injected SQL for node "test.asana.unique_asana_subtask_parent_subtask_id"
+2020-08-07 18:56:49.313047 (Thread-1): Compiling test.asana.unique_asana_project_user_project_id_user_id_role_currently_working_on
+2020-08-07 18:56:49.313212 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.313352 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.329358 (Thread-1): Writing injected SQL for node "test.asana.unique_asana_project_user_project_id_user_id_role_currently_working_on"
+2020-08-07 18:56:49.329526 (Thread-4): Compiling test.asana.not_null_asana_task_comments_task_id
+2020-08-07 18:56:49.329667 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.329894 (Thread-3): Compiling test.asana.unique_asana_task_comments_task_id
+2020-08-07 18:56:49.340594 (Thread-4): Writing injected SQL for node "test.asana.not_null_asana_task_comments_task_id"
+2020-08-07 18:56:49.340793 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.347138 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.358658 (Thread-3): Writing injected SQL for node "test.asana.unique_asana_task_comments_task_id"
+2020-08-07 18:56:49.359286 (Thread-2): Finished running node test.asana.unique_asana_subtask_parent_subtask_id
+2020-08-07 18:56:49.359601 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.360043 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.360408 (Thread-2): Began running node test.asana.not_null_asana_task_first_modifier_task_id
+2020-08-07 18:56:49.360930 (Thread-1): Finished running node test.asana.unique_asana_project_user_project_id_user_id_role_currently_working_on
+2020-08-07 18:56:49.361200 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.361828 (Thread-2): Acquiring new bigquery connection "test.asana.not_null_asana_task_first_modifier_task_id".
+2020-08-07 18:56:49.362023 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.362436 (Thread-1): Began running node test.asana.unique_asana_task_first_modifier_task_id
+2020-08-07 18:56:49.362960 (Thread-4): Finished running node test.asana.not_null_asana_task_comments_task_id
+2020-08-07 18:56:49.363125 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.363314 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.363860 (Thread-1): Acquiring new bigquery connection "test.asana.unique_asana_task_first_modifier_task_id".
+2020-08-07 18:56:49.364022 (Thread-4): Began running node model.asana.asana_task
+2020-08-07 18:56:49.364157 (Thread-2): Compiling test.asana.not_null_asana_task_first_modifier_task_id
+2020-08-07 18:56:49.364699 (Thread-3): Finished running node test.asana.unique_asana_task_comments_task_id
+2020-08-07 18:56:49.364869 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.365155 (Thread-4): Acquiring new bigquery connection "model.asana.asana_task".
+2020-08-07 18:56:49.376604 (Thread-2): Writing injected SQL for node "test.asana.not_null_asana_task_first_modifier_task_id"
+2020-08-07 18:56:49.376795 (Thread-3): Began running node test.asana.not_null_asana_task_open_length_task_id
+2020-08-07 18:56:49.377023 (Thread-1): Compiling test.asana.unique_asana_task_first_modifier_task_id
+2020-08-07 18:56:49.377231 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.377616 (Thread-3): Acquiring new bigquery connection "test.asana.not_null_asana_task_open_length_task_id".
+2020-08-07 18:56:49.393979 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.395157 (Thread-1): Writing injected SQL for node "test.asana.unique_asana_task_first_modifier_task_id"
+2020-08-07 18:56:49.395399 (Thread-4): Compiling model.asana.asana_task
+2020-08-07 18:56:49.395554 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.395748 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.408326 (Thread-2): Finished running node test.asana.not_null_asana_task_first_modifier_task_id
+2020-08-07 18:56:49.406835 (Thread-3): Compiling test.asana.not_null_asana_task_open_length_task_id
+2020-08-07 18:56:49.409005 (Thread-2): Began running node test.asana.unique_asana_task_open_length_task_id
+2020-08-07 18:56:49.407295 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.425340 (Thread-2): Acquiring new bigquery connection "test.asana.unique_asana_task_open_length_task_id".
+2020-08-07 18:56:49.433000 (Thread-3): Writing injected SQL for node "test.asana.not_null_asana_task_open_length_task_id"
+2020-08-07 18:56:49.468649 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.480467 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.520691 (Thread-1): Finished running node test.asana.unique_asana_task_first_modifier_task_id
+2020-08-07 18:56:49.526591 (Thread-4): Writing injected SQL for node "model.asana.asana_task"
+2020-08-07 18:56:49.526872 (Thread-2): Compiling test.asana.unique_asana_task_open_length_task_id
+2020-08-07 18:56:49.527182 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.545520 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.546661 (Thread-3): Finished running node test.asana.not_null_asana_task_open_length_task_id
+2020-08-07 18:56:49.552151 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.552788 (Thread-2): Writing injected SQL for node "test.asana.unique_asana_task_open_length_task_id"
+2020-08-07 18:56:49.553216 (Thread-4): finished collecting timing info
+2020-08-07 18:56:49.554154 (Thread-4): Finished running node model.asana.asana_task
+2020-08-07 18:56:49.554582 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.555022 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.555882 (Thread-2): Finished running node test.asana.unique_asana_task_open_length_task_id
+2020-08-07 18:56:49.556656 (Thread-1): Began running node model.asana.asana_project_task_metrics
+2020-08-07 18:56:49.556882 (Thread-3): Began running node model.asana.asana_user_task_metrics
+2020-08-07 18:56:49.557059 (Thread-4): Began running node model.asana.asana_daily_metrics
+2020-08-07 18:56:49.557471 (Thread-1): Acquiring new bigquery connection "model.asana.asana_project_task_metrics".
+2020-08-07 18:56:49.557615 (Thread-2): Began running node model.asana.asana_tag
+2020-08-07 18:56:49.558060 (Thread-3): Acquiring new bigquery connection "model.asana.asana_user_task_metrics".
+2020-08-07 18:56:49.558451 (Thread-4): Acquiring new bigquery connection "model.asana.asana_daily_metrics".
+2020-08-07 18:56:49.558626 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.558987 (Thread-2): Acquiring new bigquery connection "model.asana.asana_tag".
+2020-08-07 18:56:49.559126 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.559283 (Thread-4): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.559483 (Thread-1): Compiling model.asana.asana_project_task_metrics
+2020-08-07 18:56:49.559663 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.559848 (Thread-3): Compiling model.asana.asana_user_task_metrics
+2020-08-07 18:56:49.560018 (Thread-4): Compiling model.asana.asana_daily_metrics
+2020-08-07 18:56:49.571530 (Thread-2): Compiling model.asana.asana_tag
+2020-08-07 18:56:49.583643 (Thread-1): Writing injected SQL for node "model.asana.asana_project_task_metrics"
+2020-08-07 18:56:49.595602 (Thread-3): Writing injected SQL for node "model.asana.asana_user_task_metrics"
+2020-08-07 18:56:49.652949 (Thread-2): Writing injected SQL for node "model.asana.asana_tag"
+2020-08-07 18:56:49.656335 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.657156 (Thread-3): Finished running node model.asana.asana_user_task_metrics
+2020-08-07 18:56:49.657502 (Thread-3): Began running node test.asana.not_null_asana_task_task_id
+2020-08-07 18:56:49.657712 (Thread-1): finished collecting timing info
+2020-08-07 18:56:49.658362 (Thread-3): Acquiring new bigquery connection "test.asana.not_null_asana_task_task_id".
+2020-08-07 18:56:49.658976 (Thread-1): Finished running node model.asana.asana_project_task_metrics
+2020-08-07 18:56:49.662812 (Thread-4): Your application has authenticated using end user credentials from Google Cloud SDK. We recommend that most server applications use service accounts instead. If your application continues to use end user credentials from Cloud SDK, you might receive a "quota exceeded" or "API not enabled" error. For more information about service accounts, see https://cloud.google.com/docs/authentication/
+2020-08-07 18:56:49.663031 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.663504 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.663844 (Thread-1): Began running node test.asana.unique_asana_task_task_id
+2020-08-07 18:56:49.665166 (Thread-2): finished collecting timing info
+2020-08-07 18:56:49.666052 (Thread-3): Compiling test.asana.not_null_asana_task_task_id
+2020-08-07 18:56:49.673244 (Thread-1): Acquiring new bigquery connection "test.asana.unique_asana_task_task_id".
+2020-08-07 18:56:49.677836 (Thread-2): Finished running node model.asana.asana_tag
+2020-08-07 18:56:49.698284 (Thread-3): Writing injected SQL for node "test.asana.not_null_asana_task_task_id"
+2020-08-07 18:56:49.698506 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.698877 (Thread-2): Began running node model.asana.asana_user
+2020-08-07 18:56:49.700195 (Thread-1): Compiling test.asana.unique_asana_task_task_id
+2020-08-07 18:56:49.700825 (Thread-2): Acquiring new bigquery connection "model.asana.asana_user".
+2020-08-07 18:56:49.717771 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.718807 (Thread-1): Writing injected SQL for node "test.asana.unique_asana_task_task_id"
+2020-08-07 18:56:49.718978 (Thread-2): Compiling model.asana.asana_user
+2020-08-07 18:56:49.719114 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.747769 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.748592 (Thread-3): Finished running node test.asana.not_null_asana_task_task_id
+2020-08-07 18:56:49.748807 (Thread-3): Began running node test.asana.not_null_asana_user_task_metrics_user_id
+2020-08-07 18:56:49.749177 (Thread-3): Acquiring new bigquery connection "test.asana.not_null_asana_user_task_metrics_user_id".
+2020-08-07 18:56:49.749321 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.749456 (Thread-3): Compiling test.asana.not_null_asana_user_task_metrics_user_id
+2020-08-07 18:56:49.783608 (Thread-3): Writing injected SQL for node "test.asana.not_null_asana_user_task_metrics_user_id"
+2020-08-07 18:56:49.784162 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.784534 (Thread-3): finished collecting timing info
+2020-08-07 18:56:49.785227 (Thread-3): Finished running node test.asana.not_null_asana_user_task_metrics_user_id
+2020-08-07 18:56:49.785537 (Thread-3): Began running node test.asana.unique_asana_user_task_metrics_user_id
+2020-08-07 18:56:49.801725 (Thread-3): Acquiring new bigquery connection "test.asana.unique_asana_user_task_metrics_user_id".
+2020-08-07 18:56:49.801941 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:49.802119 (Thread-3): Compiling test.asana.unique_asana_user_task_metrics_user_id
+2020-08-07 18:56:49.798133 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.142472 (Thread-2): Writing injected SQL for node "model.asana.asana_user"
+2020-08-07 18:56:50.142614 (Thread-3): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('2601:645:8303:5740:953f:6134:1c5:d5b1', 56513, 0, 0), raddr=('2607:f8b0:4005:80b::200a', 443, 0, 0)>
+2020-08-07 18:56:50.142989 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.143872 (Thread-3): unclosed <socket.socket fd=9, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('2601:645:8303:5740:953f:6134:1c5:d5b1', 56512, 0, 0), raddr=('2607:f8b0:4005:809::200a', 443, 0, 0)>
+2020-08-07 18:56:50.144190 (Thread-1): Finished running node test.asana.unique_asana_task_task_id
+2020-08-07 18:56:50.144431 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.144649 (Thread-1): Began running node model.asana.asana_project
+2020-08-07 18:56:50.150642 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.157141 (Thread-1): Acquiring new bigquery connection "model.asana.asana_project".
+2020-08-07 18:56:50.162690 (Thread-2): Finished running node model.asana.asana_user
+2020-08-07 18:56:50.162836 (Thread-3): Writing injected SQL for node "test.asana.unique_asana_user_task_metrics_user_id"
+2020-08-07 18:56:50.162935 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.163087 (Thread-2): Began running node test.asana.not_null_asana_project_task_metrics_project_id
+2020-08-07 18:56:50.163575 (Thread-1): Compiling model.asana.asana_project
+2020-08-07 18:56:50.163865 (Thread-2): Acquiring new bigquery connection "test.asana.not_null_asana_project_task_metrics_project_id".
+2020-08-07 18:56:50.169492 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.169920 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.191202 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.212093 (Thread-2): Compiling test.asana.not_null_asana_project_task_metrics_project_id
+2020-08-07 18:56:50.234056 (Thread-3): Finished running node test.asana.unique_asana_user_task_metrics_user_id
+2020-08-07 18:56:50.237022 (Thread-1): Writing injected SQL for node "model.asana.asana_project"
+2020-08-07 18:56:50.248683 (Thread-2): Writing injected SQL for node "test.asana.not_null_asana_project_task_metrics_project_id"
+2020-08-07 18:56:50.248978 (Thread-3): Began running node test.asana.unique_asana_project_task_metrics_project_id
+2020-08-07 18:56:50.250441 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.250832 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.251689 (Thread-3): Acquiring new bigquery connection "test.asana.unique_asana_project_task_metrics_project_id".
+2020-08-07 18:56:50.251983 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.252529 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.252809 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.253572 (Thread-2): Finished running node test.asana.not_null_asana_project_task_metrics_project_id
+2020-08-07 18:56:50.254045 (Thread-1): Finished running node model.asana.asana_project
+2020-08-07 18:56:50.254213 (Thread-3): Compiling test.asana.unique_asana_project_task_metrics_project_id
+2020-08-07 18:56:50.254420 (Thread-2): Began running node test.asana.not_null_asana_tag_tag_id
+2020-08-07 18:56:50.254724 (Thread-1): Began running node test.asana.unique_asana_tag_tag_id
+2020-08-07 18:56:50.273021 (Thread-2): Acquiring new bigquery connection "test.asana.not_null_asana_tag_tag_id".
+2020-08-07 18:56:50.273485 (Thread-1): Acquiring new bigquery connection "test.asana.unique_asana_tag_tag_id".
+2020-08-07 18:56:50.277984 (Thread-3): Writing injected SQL for node "test.asana.unique_asana_project_task_metrics_project_id"
+2020-08-07 18:56:50.278172 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.278280 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.278720 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.279170 (Thread-2): Compiling test.asana.not_null_asana_tag_tag_id
+2020-08-07 18:56:50.279307 (Thread-1): Compiling test.asana.unique_asana_tag_tag_id
+2020-08-07 18:56:50.279470 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.297178 (Thread-2): Writing injected SQL for node "test.asana.not_null_asana_tag_tag_id"
+2020-08-07 18:56:50.303384 (Thread-1): Writing injected SQL for node "test.asana.unique_asana_tag_tag_id"
+2020-08-07 18:56:50.303962 (Thread-3): Finished running node test.asana.unique_asana_project_task_metrics_project_id
+2020-08-07 18:56:50.304528 (Thread-3): Began running node test.asana.not_null_asana_user_user_id
+2020-08-07 18:56:50.305494 (Thread-3): Acquiring new bigquery connection "test.asana.not_null_asana_user_user_id".
+2020-08-07 18:56:50.305790 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.305928 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.306257 (Thread-3): Compiling test.asana.not_null_asana_user_user_id
+2020-08-07 18:56:50.306445 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.306734 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.317647 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.318389 (Thread-2): Finished running node test.asana.not_null_asana_tag_tag_id
+2020-08-07 18:56:50.318875 (Thread-1): Finished running node test.asana.unique_asana_tag_tag_id
+2020-08-07 18:56:50.319184 (Thread-2): Began running node test.asana.unique_asana_user_user_id
+2020-08-07 18:56:50.322796 (Thread-3): Writing injected SQL for node "test.asana.not_null_asana_user_user_id"
+2020-08-07 18:56:50.323256 (Thread-1): Began running node model.asana.asana_team
+2020-08-07 18:56:50.324077 (Thread-2): Acquiring new bigquery connection "test.asana.unique_asana_user_user_id".
+2020-08-07 18:56:50.324761 (Thread-1): Acquiring new bigquery connection "model.asana.asana_team".
+2020-08-07 18:56:50.324952 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.325288 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.325465 (Thread-2): Compiling test.asana.unique_asana_user_user_id
+2020-08-07 18:56:50.325720 (Thread-1): Compiling model.asana.asana_team
+2020-08-07 18:56:50.336650 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.356975 (Thread-2): Writing injected SQL for node "test.asana.unique_asana_user_user_id"
+2020-08-07 18:56:50.357257 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.375089 (Thread-1): Writing injected SQL for node "model.asana.asana_team"
+2020-08-07 18:56:50.375997 (Thread-3): Finished running node test.asana.not_null_asana_user_user_id
+2020-08-07 18:56:50.376448 (Thread-3): Began running node test.asana.not_null_asana_project_project_id
+2020-08-07 18:56:50.376661 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.377419 (Thread-3): Acquiring new bigquery connection "test.asana.not_null_asana_project_project_id".
+2020-08-07 18:56:50.377607 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.377888 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.378136 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.378345 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.378919 (Thread-2): Finished running node test.asana.unique_asana_user_user_id
+2020-08-07 18:56:50.379072 (Thread-3): Compiling test.asana.not_null_asana_project_project_id
+2020-08-07 18:56:50.379484 (Thread-1): Finished running node model.asana.asana_team
+2020-08-07 18:56:50.379715 (Thread-2): Began running node test.asana.unique_asana_project_project_id
+2020-08-07 18:56:50.392497 (Thread-3): Writing injected SQL for node "test.asana.not_null_asana_project_project_id"
+2020-08-07 18:56:50.393585 (Thread-2): Acquiring new bigquery connection "test.asana.unique_asana_project_project_id".
+2020-08-07 18:56:50.393940 (Thread-1): Began running node test.asana.not_null_asana_team_team_id
+2020-08-07 18:56:50.394257 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.394706 (Thread-1): Acquiring new bigquery connection "test.asana.not_null_asana_team_team_id".
+2020-08-07 18:56:50.394965 (Thread-2): Compiling test.asana.unique_asana_project_project_id
+2020-08-07 18:56:50.395098 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.406467 (Thread-1): Compiling test.asana.not_null_asana_team_team_id
+2020-08-07 18:56:50.419249 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.422395 (Thread-2): Writing injected SQL for node "test.asana.unique_asana_project_project_id"
+2020-08-07 18:56:50.430691 (Thread-1): Writing injected SQL for node "test.asana.not_null_asana_team_team_id"
+2020-08-07 18:56:50.430941 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.431904 (Thread-3): Finished running node test.asana.not_null_asana_project_project_id
+2020-08-07 18:56:50.432255 (Thread-3): Began running node test.asana.unique_asana_team_team_id
+2020-08-07 18:56:50.432634 (Thread-3): Acquiring new bigquery connection "test.asana.unique_asana_team_team_id".
+2020-08-07 18:56:50.432816 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.433138 (Thread-3): Opening a new connection, currently in state closed
+2020-08-07 18:56:50.433338 (Thread-2): finished collecting timing info
+2020-08-07 18:56:50.433586 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.433914 (Thread-3): Compiling test.asana.unique_asana_team_team_id
+2020-08-07 18:56:50.434330 (Thread-2): Finished running node test.asana.unique_asana_project_project_id
+2020-08-07 18:56:50.434485 (Thread-1): finished collecting timing info
+2020-08-07 18:56:50.448178 (Thread-3): Writing injected SQL for node "test.asana.unique_asana_team_team_id"
+2020-08-07 18:56:50.448953 (Thread-1): Finished running node test.asana.not_null_asana_team_team_id
+2020-08-07 18:56:50.449694 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.450138 (Thread-3): finished collecting timing info
+2020-08-07 18:56:50.450727 (Thread-3): Finished running node test.asana.unique_asana_team_team_id
+2020-08-07 18:56:52.109433 (Thread-4): On model.asana.asana_daily_metrics: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dev_bigquery_dbt_testing", "target_name": "dev", "node_id": "model.asana.asana_daily_metrics"} */
+
+    
+        select  min( created_at )  as min_date from `dbt-package-testing`.`dbt_jamie`.`asana_task`
+    
+  
+2020-08-07 18:56:54.073166 (Thread-4): On model.asana.asana_daily_metrics: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dev_bigquery_dbt_testing", "target_name": "dev", "node_id": "model.asana.asana_daily_metrics"} */
+
+
+        select 
+  
+
+    datetime_diff(
+        cast(
+  
+
+        datetime_add(
+            cast( current_date as datetime),
+        interval 1 week
+        )
+
+
+ as datetime),
+        cast('2012-10-18' as datetime),
+        day
+    )
+
+
+
+2020-08-07 18:56:55.192330 (Thread-4): Writing injected SQL for node "model.asana.asana_daily_metrics"
+2020-08-07 18:56:55.193566 (Thread-4): finished collecting timing info
+2020-08-07 18:56:55.194161 (Thread-4): finished collecting timing info
+2020-08-07 18:56:55.195109 (Thread-4): Finished running node model.asana.asana_daily_metrics
+2020-08-07 18:56:55.198197 (Thread-2): Began running node test.asana.not_null_asana_daily_metrics_date_day
+2020-08-07 18:56:55.198540 (Thread-1): Began running node test.asana.unique_asana_daily_metrics_date_day
+2020-08-07 18:56:55.199028 (Thread-2): Acquiring new bigquery connection "test.asana.not_null_asana_daily_metrics_date_day".
+2020-08-07 18:56:55.199330 (Thread-1): Acquiring new bigquery connection "test.asana.unique_asana_daily_metrics_date_day".
+2020-08-07 18:56:55.199505 (Thread-2): Opening a new connection, currently in state closed
+2020-08-07 18:56:55.199608 (Thread-1): Opening a new connection, currently in state closed
+2020-08-07 18:56:55.199777 (Thread-2): Compiling test.asana.not_null_asana_daily_metrics_date_day
+2020-08-07 18:56:55.199897 (Thread-1): Compiling test.asana.unique_asana_daily_metrics_date_day
+2020-08-07 18:56:55.221013 (Thread-1): Writing injected SQL for node "test.asana.unique_asana_daily_metrics_date_day"
+2020-08-07 18:56:55.221607 (Thread-2): Writing injected SQL for node "test.asana.not_null_asana_daily_metrics_date_day"
+2020-08-07 18:56:55.221994 (Thread-1): finished collecting timing info
+2020-08-07 18:56:55.222208 (Thread-1): finished collecting timing info
+2020-08-07 18:56:55.222537 (Thread-1): Finished running node test.asana.unique_asana_daily_metrics_date_day
+2020-08-07 18:56:55.222848 (Thread-2): finished collecting timing info
+2020-08-07 18:56:55.223035 (Thread-2): finished collecting timing info
+2020-08-07 18:56:55.223311 (Thread-2): Finished running node test.asana.not_null_asana_daily_metrics_date_day
+2020-08-07 18:56:55.225089 (MainThread): Connection 'master' was properly closed.
+2020-08-07 18:56:55.225210 (MainThread): Connection 'test.asana.unique_asana_daily_metrics_date_day' was properly closed.
+2020-08-07 18:56:55.225283 (MainThread): Connection 'test.asana.not_null_asana_daily_metrics_date_day' was properly closed.
+2020-08-07 18:56:55.225344 (MainThread): Connection 'test.asana.unique_asana_team_team_id' was properly closed.
+2020-08-07 18:56:55.225401 (MainThread): Connection 'model.asana.asana_daily_metrics' was properly closed.
+2020-08-07 18:56:55.339065 (MainThread): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('2601:645:8303:5740:953f:6134:1c5:d5b1', 56518, 0, 0), raddr=('2607:f8b0:4005:80b::200a', 443, 0, 0)>
+2020-08-07 18:56:55.339295 (MainThread): unclosed <socket.socket fd=9, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('2601:645:8303:5740:953f:6134:1c5:d5b1', 56517, 0, 0), raddr=('2607:f8b0:4005:809::200a', 443, 0, 0)>
+2020-08-07 18:56:55.465850 (MainThread): 11:56:55 | Done.
+2020-08-07 18:56:55.472883 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2020-08-07 18:56:55.473030 (MainThread): Opening a new connection, currently in state init
+2020-08-07 18:56:55.473206 (MainThread): 11:56:55 | Building catalog
+2020-08-07 18:56:55.676749 (MainThread): Your application has authenticated using end user credentials from Google Cloud SDK. We recommend that most server applications use service accounts instead. If your application continues to use end user credentials from Cloud SDK, you might receive a "quota exceeded" or "API not enabled" error. For more information about service accounts, see https://cloud.google.com/docs/authentication/
+2020-08-07 18:56:58.077511 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "dbt-package-testing.information_schema".
+2020-08-07 18:56:58.078541 (ThreadPoolExecutor-1_1): Acquiring new bigquery connection "dbt-package-testing.information_schema".
+2020-08-07 18:56:58.081302 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-08-07 18:56:58.081447 (ThreadPoolExecutor-1_1): Opening a new connection, currently in state init
+2020-08-07 18:56:58.109029 (ThreadPoolExecutor-1_1): Your application has authenticated using end user credentials from Google Cloud SDK. We recommend that most server applications use service accounts instead. If your application continues to use end user credentials from Cloud SDK, you might receive a "quota exceeded" or "API not enabled" error. For more information about service accounts, see https://cloud.google.com/docs/authentication/
+2020-08-07 18:56:58.111884 (ThreadPoolExecutor-1_0): Your application has authenticated using end user credentials from Google Cloud SDK. We recommend that most server applications use service accounts instead. If your application continues to use end user credentials from Cloud SDK, you might receive a "quota exceeded" or "API not enabled" error. For more information about service accounts, see https://cloud.google.com/docs/authentication/
+2020-08-07 18:56:59.817593 (ThreadPoolExecutor-1_0): On dbt-package-testing.information_schema: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dev_bigquery_dbt_testing", "target_name": "dev", "connection_name": "dbt-package-testing.information_schema"} */
+
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `dbt-package-testing`.`dbt_jamie`.__TABLES__
+        where (upper(dataset_id) = upper('dbt_jamie'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `dbt-package-testing`.`dbt_jamie`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `dbt-package-testing`.`dbt_jamie`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2020-08-07 18:56:59.819377 (ThreadPoolExecutor-1_1): On dbt-package-testing.information_schema: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dev_bigquery_dbt_testing", "target_name": "dev", "connection_name": "dbt-package-testing.information_schema"} */
+
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `dbt-package-testing`.`asana`.__TABLES__
+        where (upper(dataset_id) = upper('asana'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `dbt-package-testing`.`asana`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `dbt-package-testing`.`asana`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2020-08-07 18:57:03.851631 (MainThread): 11:57:03 | Catalog written to /Users/jamie.rodriguez/Documents/github_repos/asana_fake/dbt_asana/target/catalog.json
+2020-08-07 18:57:03.853485 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec2a0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ecfc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f45ab20>]}
+2020-08-07 18:57:03.853970 (MainThread): Flushing usage events
+2020-08-07 18:57:04.340370 (MainThread): Connection 'generate_catalog' was properly closed.
+2020-08-07 18:57:04.340544 (MainThread): Connection 'dbt-package-testing.information_schema' was properly closed.
+2020-08-07 18:57:04.340636 (MainThread): Connection 'dbt-package-testing.information_schema' was properly closed.

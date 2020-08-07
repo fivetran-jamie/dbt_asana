@@ -1,7 +1,4 @@
-
-target/
-dbt_modules/
-logs/
+target/logs/
 .DS_Store
 # Local Netlify folder
 .netlify
